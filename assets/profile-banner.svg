@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+<title id="title">Pouria Jamali — trading systems and financial backends</title><desc id="desc">Cobalt engineering diagram linking execution, risk controls and financial software.</desc>
+<defs><linearGradient id="bg"><stop stop-color="#0a1629"/><stop offset=".65" stop-color="#17344e"/><stop offset="1" stop-color="#323148"/></linearGradient></defs>
+<rect width="1200" height="280" rx="20" fill="url(#bg)"/>
+<g fill="none" stroke="#72dae6" stroke-width="2" opacity=".5"><path d="M850 55h70v55h85v70h95M820 205h65v-55h120M1005 110V45h140M1100 180v60h50"/><rect x="903" y="94" width="34" height="34" rx="7"/><rect x="988" y="133" width="34" height="34" rx="7"/><circle cx="1100" cy="180" r="15"/></g>
+<path d="M42 225h180l35-35h170" fill="none" stroke="#efbc83" stroke-width="2" opacity=".6"/>
+<text x="52" y="79" font-family="Segoe UI,Arial,sans-serif" font-size="23" fill="#9edee8" letter-spacing="3">POURIA JAMALI</text>
+<text x="50" y="137" font-family="Segoe UI,Arial,sans-serif" font-size="42" font-weight="600" fill="#f2f7ff">Trading systems &amp; financial backends</text>
+<text x="53" y="181" font-family="Segoe UI,Arial,sans-serif" font-size="24" fill="#c9d8e8">C# / .NET · C++ · Python</text>
+</svg>
