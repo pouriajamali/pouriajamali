@@ -22,7 +22,7 @@ Reserve an order, retry the same request, then test the exposure limit. The brow
 
 Order-state transitions, reserved exposure and retry-safe receipts. Inspect how SQLite commits state, the request receipt and an audit outbox record together; the tests cover retries, rollback and repeated delivery.
 
-[Source & tests](https://github.com/pouriajamali/trading-execution-lab) · [Design decisions](https://github.com/pouriajamali/trading-execution-lab/tree/main/docs/decisions) · [Source release](https://github.com/pouriajamali/trading-execution-lab/releases/tag/v0.4.0)
+[Source & tests](https://github.com/pouriajamali/trading-execution-lab) · [Design decisions](https://github.com/pouriajamali/trading-execution-lab/tree/main/docs/decisions) · [Source release](https://github.com/pouriajamali/trading-execution-lab/releases/tag/v0.4.0) · [Local panel preview](https://github.com/pouriajamali/trading-execution-lab/releases/tag/v0.5.0-preview.1)
 
 ### C++20 / Python — Book Replay Lab
 
