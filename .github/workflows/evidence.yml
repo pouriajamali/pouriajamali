@@ -1,0 +1,16 @@
+name: Career evidence consistency
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  registry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python tools/evidence_registry.py
+      - run: python -m unittest discover -s tools -p 'test_*.py' -v
+      - name: Verify signed registry bytes
+        run: ssh-keygen -Y verify -f evidence/allowed-signers -I pouriajamali -n file -s evidence/projects.json.sig < evidence/projects.json

@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "registry_revision": "2026-11-07.1",
+  "authority": "https://github.com/pouriajamali/pouriajamali/blob/main/evidence/projects.json",
+  "promotion_policy": "Discovery never promotes a release. Review exact commit, CI, downloaded bytes and signature scope, then explicitly approve the recommended release. Issued resume editions remain immutable.",
+  "projects": {
+    "execution": {
+      "name": "Trading Execution Lab",
+      "repository": "https://github.com/pouriajamali/trading-execution-lab",
+      "site_page": "https://pouriajamali.site/work/execution-lab/",
+      "latest_observed_release": "v0.5.2-preview.1",
+      "other_release_channel": null,
+      "documents": {
+        "case_study": "docs/CASE-STUDY.md",
+        "design": "docs/decisions/0002-transactional-control-plane.md"
+      },
+      "recommended_verified_release": {
+        "tag": "v0.5.2-preview.1",
+        "commit": "779f654dec7efe07c0e106dba9c438c6b5775eb2",
+        "prerelease": true,
+        "ci": {
+          "url": "https://github.com/pouriajamali/trading-execution-lab/actions/runs/42253983786",
+          "head_sha": "779f654dec7efe07c0e106dba9c438c6b5775eb2",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        "git_commit_signature": {
+          "verified": true,
+          "reason": "valid"
+        },
+        "downloads": {
+          "checked_at": "2026-11-07T10:23:57.921296+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "trading-execution-lab-v0.5.2-preview.1-source.zip",
+              "trading-execution-lab-v0.5.2-preview.1-win-x64.zip",
+              "trading-execution-lab-v0.5.2-preview.1-linux-x64.tar.gz"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.5.2-preview.1/SHA256SUMS.txt",
+              "sha256": "553aafb4ca97c50d5ad7cff6b7090afcd78dfde6182a7e44d26afb07b8ab3442",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.5.2-preview.1/SHA256SUMS.txt.sig",
+              "sha256": "d822c70ef5ffd1e4956d0bc82084320d3513bb5e8569385628321b82c83dae69",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.5.2-preview.1/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "cc7038b2d98f856af97b58eb06619ff441fbe9b178da5396f61d1ccdf7a65e7c",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "trading-execution-lab-v0.5.2-preview.1-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.5.2-preview.1/trading-execution-lab-v0.5.2-preview.1-linux-x64.tar.gz",
+              "sha256": "95363c7cdc79f045288f1c74e4af30fab222dca0c18e114665b8a6bc0a420405",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "trading-execution-lab-v0.5.2-preview.1-source.zip",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.5.2-preview.1/trading-execution-lab-v0.5.2-preview.1-source.zip",
+              "sha256": "a33b2a585f0f0ee3a22afc6ba768dc4f395ffa39e1c583253bc23e7de1cc39fe",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "trading-execution-lab-v0.5.2-preview.1-win-x64.zip",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.5.2-preview.1/trading-execution-lab-v0.5.2-preview.1-win-x64.zip",
+              "sha256": "2dec6257568f2ae859409a778b9eb01c697d1d5a745b7477ea0cf5526d226597",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "scope": "Exact-tag CI and downloaded bytes/signature verified. No new local execution of the packages; no employer/production/performance certification."
+      },
+      "historical_evidence_tags": [
+        "v0.5.1-preview.1",
+        "v0.4.0",
+        "v0.2.0"
+      ]
+    },
+    "reliability": {
+      "name": "Service Reliability Lab",
+      "repository": "https://github.com/pouriajamali/service-reliability-lab",
+      "site_page": "https://pouriajamali.site/work/service-reliability/",
+      "latest_observed_release": "v0.1.2-preview.1",
+      "other_release_channel": null,
+      "documents": {
+        "case_study": "README.md",
+        "design": "docs/DESIGN.md"
+      },
+      "recommended_verified_release": {
+        "tag": "v0.1.2-preview.1",
+        "commit": "76f489a7d83fe60212de5eee9218f18ed8c96cab",
+        "prerelease": true,
+        "ci": {
+          "url": "https://github.com/pouriajamali/service-reliability-lab/actions/runs/42231936202",
+          "head_sha": "76f489a7d83fe60212de5eee9218f18ed8c96cab",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        "git_commit_signature": {
+          "verified": true,
+          "reason": "valid"
+        },
+        "downloads": {
+          "checked_at": "2026-11-07T10:23:45.796183+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "BUILD-MANIFEST.json",
+              "SIGNING-PUBLIC-KEY.pub",
+              "service-reliability-demo.html",
+              "service-reliability-lab-v0.1.2-preview.1.zip"
+            ]
+          },
+          "assets": [
+            {
+              "name": "BUILD-MANIFEST.json",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.2-preview.1/BUILD-MANIFEST.json",
+              "sha256": "5a6034055a84cc9bfb75a13fd10e8c4c1dd5fbf720cfe56a527fa9e4c152755c",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "service-reliability-demo.html",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.2-preview.1/service-reliability-demo.html",
+              "sha256": "86d2fa94978079e209c40543c8f7256761b003b621e33e054a9e0430bb87e32b",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "service-reliability-lab-v0.1.2-preview.1.zip",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.2-preview.1/service-reliability-lab-v0.1.2-preview.1.zip",
+              "sha256": "2e03dafd31f3d76b7c8be34ae15c0178eea2d4cd660e0d60b7870c8f73181fb1",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.2-preview.1/SHA256SUMS.txt",
+              "sha256": "efee04bd5a0a03fd72dc0ef764cf996c9e2f1404fabe1b47f264e2f2a3041e4f",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.2-preview.1/SHA256SUMS.txt.sig",
+              "sha256": "cd70f58243f3297a9e59302f12af52232ed5b4790cbe26caa232e6f40175be2c",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.2-preview.1/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "scope": "Exact-tag CI and downloaded bytes/signature verified. No new local execution of the packages; no employer/production/performance certification."
+      },
+      "historical_evidence_tags": []
+    },
+    "integrity": {
+      "name": "Market Data Integrity Lab",
+      "repository": "https://github.com/pouriajamali/market-data-integrity-lab",
+      "site_page": "https://pouriajamali.site/work/market-data-integrity/",
+      "latest_observed_release": "v0.6.0-preview.1",
+      "other_release_channel": "csv-action-v0.1.0-preview.1",
+      "documents": {
+        "case_study": "docs/CASE-STUDY.md",
+        "design": "README.md"
+      },
+      "recommended_verified_release": {
+        "tag": "v0.6.0-preview.1",
+        "commit": "0335057b9cd10b3c3a2a9335566bc53f62795be3",
+        "prerelease": true,
+        "ci": {
+          "url": "https://github.com/pouriajamali/market-data-integrity-lab/actions/runs/41686976054",
+          "head_sha": "0335057b9cd10b3c3a2a9335566bc53f62795be3",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        "git_commit_signature": {
+          "verified": false,
+          "reason": "unsigned"
+        },
+        "downloads": {
+          "checked_at": "2026-11-07T10:27:18.056990+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "market-data-integrity-lab-v0.6.0-preview.1-win-x64.zip",
+              "market-data-integrity-lab-v0.6.0-preview.1.zip",
+              "market-data-integrity-lab-v0.6.0-preview.1-linux-x64.tar.gz"
+            ]
+          },
+          "assets": [
+            {
+              "name": "market-data-integrity-lab-60s.webm",
+              "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/v0.6.0-preview.1/market-data-integrity-lab-60s.webm",
+              "sha256": "bd4eebd38f767099a26fdc43bde31200e94fd779d4713c8f7ce2d4f5c213de7c",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "market-data-integrity-lab-v0.6.0-preview.1-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/v0.6.0-preview.1/market-data-integrity-lab-v0.6.0-preview.1-linux-x64.tar.gz",
+              "sha256": "a7be0affb7fa7df0cf9645772ffdd3fdd6d42e129d6560c08de786880708288f",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "market-data-integrity-lab-v0.6.0-preview.1-win-x64.zip",
+              "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/v0.6.0-preview.1/market-data-integrity-lab-v0.6.0-preview.1-win-x64.zip",
+              "sha256": "50cbfb1d2d6342cc9ce50e085b3cecae3e853549057dea8d826acd6cf64128a6",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "market-data-integrity-lab-v0.6.0-preview.1.zip",
+              "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/v0.6.0-preview.1/market-data-integrity-lab-v0.6.0-preview.1.zip",
+              "sha256": "5c875c2549f44220aaaf360498a8be626d37c47ade3dfe3b935e9a8f7e1395a8",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/v0.6.0-preview.1/SHA256SUMS.txt",
+              "sha256": "0988656bf9cdd1446366def169a6cd086a9aa5df0cceb3606fcefe43bafb80d9",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/v0.6.0-preview.1/SHA256SUMS.txt.sig",
+              "sha256": "f4b6259e1c2b1b29936d38545b9ec5f12c3a2d9d3a0417c94c6908e1d6665fa4",
+              "covered_by_signed_checksums": false
+            }
+          ]
+        },
+        "scope": "Exact-tag CI and downloaded bytes/signature verified. No new local execution of the packages; no employer/production/performance certification."
+      },
+      "historical_evidence_tags": [
+        "v0.4.0-preview.1"
+      ]
+    },
+    "replay": {
+      "name": "Book Replay Lab",
+      "repository": "https://github.com/pouriajamali/book-replay-lab",
+      "site_page": "https://pouriajamali.site/work/book-replay-lab/",
+      "latest_observed_release": "v1.2.1-preview.1",
+      "other_release_channel": null,
+      "documents": {
+        "case_study": "README.md",
+        "design": "FLAT_DEPTH.md"
+      },
+      "recommended_verified_release": {
+        "tag": "v1.2.1-preview.1",
+        "commit": "b213a69ebc85bcf2d32a589356b7ef5b0891822b",
+        "prerelease": true,
+        "ci": {
+          "url": "https://github.com/pouriajamali/book-replay-lab/actions/runs/42244750293",
+          "head_sha": "b213a69ebc85bcf2d32a589356b7ef5b0891822b",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        "git_commit_signature": {
+          "verified": true,
+          "reason": "valid"
+        },
+        "downloads": {
+          "checked_at": "2026-11-07T10:23:57.176613+00:00",
+          "sha256_verified_assets": 5,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "SIGNING-PUBLIC-KEY.pub",
+              "SOURCE-MANIFEST.json",
+              "book-replay-lab-v1.2.1-preview.1.zip"
+            ]
+          },
+          "assets": [
+            {
+              "name": "book-replay-lab-v1.2.1-preview.1.zip",
+              "url": "https://github.com/pouriajamali/book-replay-lab/releases/download/v1.2.1-preview.1/book-replay-lab-v1.2.1-preview.1.zip",
+              "sha256": "6cd799057f48f780c5bb2cd0daf16983974cd3e7d5b90a2ead2331b59287c987",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/book-replay-lab/releases/download/v1.2.1-preview.1/SHA256SUMS.txt",
+              "sha256": "92210bdd8de61c67962922fb61dc2f10a190efc582724dd7ae16f5b51d0aa557",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/book-replay-lab/releases/download/v1.2.1-preview.1/SHA256SUMS.txt.sig",
+              "sha256": "27b8fd21506c3033c325565a1cef75e9b752bd573267723946c1b1a0116ffcaa",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/book-replay-lab/releases/download/v1.2.1-preview.1/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "SOURCE-MANIFEST.json",
+              "url": "https://github.com/pouriajamali/book-replay-lab/releases/download/v1.2.1-preview.1/SOURCE-MANIFEST.json",
+              "sha256": "c4d58284a8ddd2ccc8fb3efdfdee087d814994c7b004d197d92451c0c498a523",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "scope": "Exact-tag CI and downloaded bytes/signature verified. No new local execution of the packages; no employer/production/performance certification."
+      },
+      "historical_evidence_tags": []
+    }
+  },
+  "resume_editions": {
+    "showcase-20261106": {
+      "status": "issued_immutable",
+      "release_tags": {
+        "execution": "v0.5.1-preview.1",
+        "reliability": "v0.1.2-preview.1",
+        "integrity": "v0.6.0-preview.1",
+        "replay": "v1.2.1-preview.1"
+      },
+      "reason_current_software_can_differ": "Trading v0.5.2 changes launcher preflight, not the 56 C# cases or the resume claims. Historical evidence links remain valid; a later PDF edition must select its release snapshot explicitly.",
+      "public_pdfs": {
+        "Pouria_Jamali_DotNet_Backend_EN.pdf": {
+          "language": "en",
+          "pages": 2,
+          "sha256": "10c288eb3d59678d523651e3aaaff3ce3230296d49e8abdcb1058f5b1bf60cf6"
+        },
+        "Pouria_Jamali_Financial_Backend_ES.pdf": {
+          "language": "es",
+          "pages": 2,
+          "sha256": "1a227227a00d96513267dc95816d4483f6c3079b61fad1f0a4a29d451b8f848e"
+        },
+        "Pouria_Jamali_Financial_Backend_NL.pdf": {
+          "language": "nl",
+          "pages": 2,
+          "sha256": "5abe069a733cb2761ba94268016a1b9b9af89d17687290e795bff4989cf748ba"
+        },
+        "Pouria_Jamali_Trading_Systems_EN.pdf": {
+          "language": "en",
+          "pages": 2,
+          "sha256": "02726194f822df7f83ed9819d94ed773c1e13e29d9307e9b603a007e70c5401d"
+        },
+        "Pouria_Jamali_Trading_Systems_ES.pdf": {
+          "language": "es",
+          "pages": 2,
+          "sha256": "5f3aed3f05841c1843a5c0de5157274f2ec624df1af4d26422b684914875c518"
+        },
+        "Pouria_Jamali_Trading_Systems_NL.pdf": {
+          "language": "nl",
+          "pages": 2,
+          "sha256": "525d99114a626d48394793a24d5b3b48b95a3e10442ac6d7dca6f8f24621297c"
+        }
+      }
+    }
+  }
+}
