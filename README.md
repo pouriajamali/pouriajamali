@@ -6,7 +6,7 @@
 
 I build futures execution and order-risk systems, and modernise payment backends. My work includes TT execution in C#, C++ HFT connectivity development and payment back-office architecture.
 
-[Portfolio](https://pouriajamali.site/) · [60-second review](https://pouriajamali.site/work/engineering-evidence/#quick-review) · [Resumes & Contact](https://pouriajamali.site/resumes/) · [LinkedIn](https://www.linkedin.com/in/pouria-jamali-a6a04138/)
+[Portfolio](https://pouriajamali.site/) · [Public engineering projects](https://pouriajamali.site/work/#public-projects) · [Resumes & Contact](https://pouriajamali.site/resumes/) · [LinkedIn](https://www.linkedin.com/in/pouria-jamali-a6a04138/)
 
 ## Try the operator panel
 
