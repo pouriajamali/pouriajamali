@@ -50,7 +50,9 @@ class RegistryChecks(unittest.TestCase):
 
     def test_active_edition_and_original_snapshot_are_distinct(self):
         data=load()
-        self.assertEqual('senior-evidence-20261110',data['active_resume_edition'])
+        self.assertEqual('review-repairs-20261110-final',data['active_resume_edition'])
+        self.assertEqual('v0.1.0-preview.1',data['resume_editions']['senior-evidence-20261110']['release_tags']['contracts'])
+        self.assertEqual('v0.1.0-preview.2',data['resume_editions'][data['active_resume_edition']]['release_tags']['contracts'])
         self.assertEqual(4,len(data['resume_editions']['showcase-20261106']['release_tags']))
         self.assertEqual(14,len(data['resume_editions'][data['active_resume_edition']]['release_tags']))
         self.assertEqual(6,len(data['resume_editions'][data['active_resume_edition']]['public_pdfs']))
