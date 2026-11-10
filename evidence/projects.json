@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_revision": "2026-11-10.1",
+  "registry_revision": "2026-11-10.2",
   "authority": "https://github.com/pouriajamali/pouriajamali/blob/main/evidence/projects.json",
   "promotion_policy": "Discovery never promotes a release. Review exact commit, CI, downloaded bytes and signature scope, then explicitly approve the recommended release. Issued resume editions remain immutable.",
   "projects": {
@@ -333,64 +333,80 @@
       "name": "Contract Evolution Lab",
       "repository": "https://github.com/pouriajamali/contract-evolution-lab",
       "site_page": "https://pouriajamali.site/work/contract-evolution/",
-      "latest_observed_release": "v0.1.0-preview.1",
+      "latest_observed_release": "v0.1.0-preview.2",
       "other_release_channel": null,
       "documents": {
         "case_study": "README.md",
         "design": "docs/ADR.md"
       },
       "recommended_verified_release": {
-        "tag": "v0.1.0-preview.1",
-        "commit": "f9ac353b7c64526267c137b30368d0490ffe6bb0",
+        "tag": "v0.1.0-preview.2",
+        "commit": "ce9c2916e591dbe647e50d0990c4af4ba4a2ae88",
         "prerelease": true,
         "ci": {
-          "url": "https://github.com/pouriajamali/contract-evolution-lab/actions/runs/42688176547",
-          "head_sha": "f9ac353b7c64526267c137b30368d0490ffe6bb0",
+          "url": "https://github.com/pouriajamali/contract-evolution-lab/actions/runs/42837278269",
+          "head_sha": "ce9c2916e591dbe647e50d0990c4af4ba4a2ae88",
           "status": "completed",
           "conclusion": "success"
         },
         "downloads": {
           "checked_at": "2026-11-10",
-          "sha256_verified_assets": 4,
+          "sha256_verified_assets": 6,
           "execution_performed": false,
           "signature": {
             "verified": true,
             "namespace": "file",
             "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
             "scope": [
-              "contract-evolution-lab-v0.1.0-preview.1-source.zip"
+              "contract-evolution-lab-v0.1.0-preview.2-linux-x64.tar.gz",
+              "contract-evolution-lab-v0.1.0-preview.2-source.zip",
+              "contract-evolution-lab-v0.1.0-preview.2-win-x64.zip"
             ]
           },
           "assets": [
             {
+              "name": "contract-evolution-lab-v0.1.0-preview.2-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/contract-evolution-lab/releases/download/v0.1.0-preview.2/contract-evolution-lab-v0.1.0-preview.2-linux-x64.tar.gz",
+              "sha256": "41d0eb07766a45ec0c3e4e93e092ec63b73a2478b0c89e8c79c1773eee0035cd",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "contract-evolution-lab-v0.1.0-preview.2-source.zip",
+              "url": "https://github.com/pouriajamali/contract-evolution-lab/releases/download/v0.1.0-preview.2/contract-evolution-lab-v0.1.0-preview.2-source.zip",
+              "sha256": "c632bf60c1a15fdadbc82fd4848c9526660ae830f33bac297fed29b9aa7a99cd",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "contract-evolution-lab-v0.1.0-preview.2-win-x64.zip",
+              "url": "https://github.com/pouriajamali/contract-evolution-lab/releases/download/v0.1.0-preview.2/contract-evolution-lab-v0.1.0-preview.2-win-x64.zip",
+              "sha256": "db54eb3750e245329ba1d266113f9a394040f26112b18b5438c76f0045446724",
+              "covered_by_signed_checksums": true
+            },
+            {
               "name": "SHA256SUMS.txt",
-              "url": "https://github.com/pouriajamali/contract-evolution-lab/releases/download/v0.1.0-preview.1/SHA256SUMS.txt",
-              "sha256": "b68a5c8c130223dd9336b1bbb66d3d93d179d2b9ee3f046a393d32204dd6956d",
+              "url": "https://github.com/pouriajamali/contract-evolution-lab/releases/download/v0.1.0-preview.2/SHA256SUMS.txt",
+              "sha256": "46efa68a387ebc3944c452fe5644ab0410b916545aa7c9a33b67fe7502a4ea44",
               "covered_by_signed_checksums": false
             },
             {
               "name": "SHA256SUMS.txt.sig",
-              "url": "https://github.com/pouriajamali/contract-evolution-lab/releases/download/v0.1.0-preview.1/SHA256SUMS.txt.sig",
-              "sha256": "7ccd7285f09f1fbeadf8c93aa5db1f44adf210623cff532d3afb139b681ddb97",
+              "url": "https://github.com/pouriajamali/contract-evolution-lab/releases/download/v0.1.0-preview.2/SHA256SUMS.txt.sig",
+              "sha256": "87f968c64ab9554602190250f5df07c9277692fbd89930c2a6969786484ea673",
               "covered_by_signed_checksums": false
             },
             {
               "name": "SIGNING-PUBLIC-KEY.pub",
-              "url": "https://github.com/pouriajamali/contract-evolution-lab/releases/download/v0.1.0-preview.1/SIGNING-PUBLIC-KEY.pub",
-              "sha256": "cc7038b2d98f856af97b58eb06619ff441fbe9b178da5396f61d1ccdf7a65e7c",
+              "url": "https://github.com/pouriajamali/contract-evolution-lab/releases/download/v0.1.0-preview.2/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
               "covered_by_signed_checksums": false
-            },
-            {
-              "name": "contract-evolution-lab-v0.1.0-preview.1-source.zip",
-              "url": "https://github.com/pouriajamali/contract-evolution-lab/releases/download/v0.1.0-preview.1/contract-evolution-lab-v0.1.0-preview.1-source.zip",
-              "sha256": "eb295f4ec38e6e17537a1ef88ab17412b737947f442841dc0fadcb594b289940",
-              "covered_by_signed_checksums": true
             }
           ]
         },
-        "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
+        "scope": "Promoted from sealed root acceptance 2026-11-10: public source/native bundle hashes and signed checksums verified; exact-tag CI passed. This career sync rehashed the accepted local downloads, not a new execution, latency benchmark or production acceptance."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [
+        "v0.1.0-preview.1"
+      ]
     },
     "ownership": {
       "name": "Fenced Shard Ownership Lab",
@@ -522,64 +538,80 @@
       "name": "Point-in-Time Reference Lab",
       "repository": "https://github.com/pouriajamali/point-in-time-reference-lab",
       "site_page": "https://pouriajamali.site/work/point-in-time-reference/",
-      "latest_observed_release": "v0.1.0-preview.1",
+      "latest_observed_release": "v0.1.0-preview.2",
       "other_release_channel": null,
       "documents": {
         "case_study": "README.md",
         "design": "docs/ADR.md"
       },
       "recommended_verified_release": {
-        "tag": "v0.1.0-preview.1",
-        "commit": "d797dd185d06d6d28f57662bf7b97b2cf2cf6b25",
+        "tag": "v0.1.0-preview.2",
+        "commit": "10100a00c90482fb291f83fadf11af9546fb6293",
         "prerelease": true,
         "ci": {
-          "url": "https://github.com/pouriajamali/point-in-time-reference-lab/actions/runs/42688207802",
-          "head_sha": "d797dd185d06d6d28f57662bf7b97b2cf2cf6b25",
+          "url": "https://github.com/pouriajamali/point-in-time-reference-lab/actions/runs/42837326358",
+          "head_sha": "10100a00c90482fb291f83fadf11af9546fb6293",
           "status": "completed",
           "conclusion": "success"
         },
         "downloads": {
           "checked_at": "2026-11-10",
-          "sha256_verified_assets": 4,
+          "sha256_verified_assets": 6,
           "execution_performed": false,
           "signature": {
             "verified": true,
             "namespace": "file",
             "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
             "scope": [
-              "point-in-time-reference-lab-v0.1.0-preview.1-source.zip"
+              "point-in-time-reference-lab-v0.1.0-preview.2-linux-x64.tar.gz",
+              "point-in-time-reference-lab-v0.1.0-preview.2-source.zip",
+              "point-in-time-reference-lab-v0.1.0-preview.2-win-x64.zip"
             ]
           },
           "assets": [
             {
+              "name": "point-in-time-reference-lab-v0.1.0-preview.2-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.2/point-in-time-reference-lab-v0.1.0-preview.2-linux-x64.tar.gz",
+              "sha256": "582d8597c89c972f75d5dd438bda35d54cf51f64f3f989653c4c8bb2814bd3a9",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "point-in-time-reference-lab-v0.1.0-preview.2-source.zip",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.2/point-in-time-reference-lab-v0.1.0-preview.2-source.zip",
+              "sha256": "72d8c1a1f52c8993890e68bcdfbad4bf1ceb8af3a57287754eae6e22606ce53b",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "point-in-time-reference-lab-v0.1.0-preview.2-win-x64.zip",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.2/point-in-time-reference-lab-v0.1.0-preview.2-win-x64.zip",
+              "sha256": "efa7a42d755a3eb31a0a5e5c3c14cbe83754a325183072813da9e79aece6261d",
+              "covered_by_signed_checksums": true
+            },
+            {
               "name": "SHA256SUMS.txt",
-              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.1/SHA256SUMS.txt",
-              "sha256": "01db4281004657844bc68630b832dda7d632e0e8fc7dc35a23c7f1602e5c9594",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.2/SHA256SUMS.txt",
+              "sha256": "6c9edb289e95b7f55db37bcb598a44cf82827750daf9c58c0471fe453d649a11",
               "covered_by_signed_checksums": false
             },
             {
               "name": "SHA256SUMS.txt.sig",
-              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.1/SHA256SUMS.txt.sig",
-              "sha256": "f313b15a8b3bbe4968cfcd7b7eac37c5d83343b9564ed1e1d1fcde068cf4bc4e",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.2/SHA256SUMS.txt.sig",
+              "sha256": "10a0b7c4b39adc6f32169abf1c992b0039581579442122eb5bc8ccee92d607ec",
               "covered_by_signed_checksums": false
             },
             {
               "name": "SIGNING-PUBLIC-KEY.pub",
-              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.1/SIGNING-PUBLIC-KEY.pub",
-              "sha256": "cc7038b2d98f856af97b58eb06619ff441fbe9b178da5396f61d1ccdf7a65e7c",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.2/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
               "covered_by_signed_checksums": false
-            },
-            {
-              "name": "point-in-time-reference-lab-v0.1.0-preview.1-source.zip",
-              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.1/point-in-time-reference-lab-v0.1.0-preview.1-source.zip",
-              "sha256": "7408df4fe56293e8c8d3488b46f9d0f09c4d31931c6fe44b7093635b8d5ff2a8",
-              "covered_by_signed_checksums": true
             }
           ]
         },
-        "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
+        "scope": "Promoted from sealed root acceptance 2026-11-10: public source/native bundle hashes and signed checksums verified; exact-tag CI passed. This career sync rehashed the accepted local downloads, not a new execution, latency benchmark or production acceptance."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [
+        "v0.1.0-preview.1"
+      ]
     },
     "fix": {
       "name": "FIX Session Recovery Harness",
@@ -1060,7 +1092,65 @@
         }
       },
       "scope": "New curated project evidence. Title, B2, six historical roles, career facts and source design retained. Translated PDFs use the same selected projects."
+    },
+    "review-repairs-20261110-final": {
+      "issued_at": "2026-11-10",
+      "release_tags": {
+        "execution": "v0.5.2-preview.1",
+        "reliability": "v0.1.2-preview.1",
+        "integrity": "v0.6.0-preview.1",
+        "replay": "v1.2.1-preview.1",
+        "contracts": "v0.1.0-preview.2",
+        "ownership": "v0.1.0-preview.2",
+        "matching": "v0.1.0-preview.1",
+        "reference": "v0.1.0-preview.2",
+        "fix": "v0.1.0-preview.1",
+        "ledger": "v0.1.0-preview.1",
+        "latency": "v0.1.0-preview.1",
+        "recovery": "v0.1.0-preview.1",
+        "doctor": "v0.1.0-preview.1",
+        "admission": "v0.1.0-preview.1"
+      },
+      "public_pdfs": {
+        "Pouria_Jamali_DotNet_Backend_EN.pdf": {
+          "language": "en",
+          "pages": 2,
+          "sha256": "f522e37e8565687b824169f9a5a55a9b7ddad8f90f324b74c38c5bcb552e2854",
+          "revision_receipt": "review-repairs-20261110-final/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_EN.pdf": {
+          "language": "en",
+          "pages": 2,
+          "sha256": "8b834d8ae0dfcc92b8ad9d214f2c3e9753b9fdfbde819a47cb25e1d92d9ccb1a",
+          "revision_receipt": "review-repairs-20261110-final/verification.json"
+        },
+        "Pouria_Jamali_Financial_Backend_NL.pdf": {
+          "language": "nl",
+          "pages": 2,
+          "sha256": "c21202d099b9d81ce1c7adb0bacbefe65be95ae618a70cc97bdf6f9849764891",
+          "revision_receipt": "review-repairs-20261110-final/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_NL.pdf": {
+          "language": "nl",
+          "pages": 2,
+          "sha256": "08b21bc78dd9deffcfcdd1bb7cfc8e0dc271355bd86af94f62584e2b75811f59",
+          "revision_receipt": "review-repairs-20261110-final/verification.json"
+        },
+        "Pouria_Jamali_Financial_Backend_ES.pdf": {
+          "language": "es",
+          "pages": 2,
+          "sha256": "7c031007d572ce2b737920c3f9339ad21a950847e9a8a7e9d9a9b4876618596b",
+          "revision_receipt": "review-repairs-20261110-final/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_ES.pdf": {
+          "language": "es",
+          "pages": 2,
+          "sha256": "e9263e3e8530b07ff8ee5ae4315733ad561d50065c16207414439a4e9d2e3c11",
+          "revision_receipt": "review-repairs-20261110-final/verification.json"
+        }
+      },
+      "scope": "Bounded wording and evidence-link corrections to reviewed senior CVs. Frozen identity, B2, six roles, skill inventory and team-attributed achievements preserved. External ATS applies only to separately recorded English file hashes."
     }
   },
-  "active_resume_edition": "senior-evidence-20261110"
+  "active_resume_edition": "review-repairs-20261110-final"
 }
