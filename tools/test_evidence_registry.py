@@ -48,4 +48,17 @@ class RegistryChecks(unittest.TestCase):
             path=Path(tmp)/'projects.json';path.write_text(json.dumps(data),encoding='utf8')
             with self.assertRaises(AssertionError):load(path)
 
+    def test_active_edition_and_original_snapshot_are_distinct(self):
+        data=load()
+        self.assertEqual('senior-evidence-20261110',data['active_resume_edition'])
+        self.assertEqual(4,len(data['resume_editions']['showcase-20261106']['release_tags']))
+        self.assertEqual(14,len(data['resume_editions'][data['active_resume_edition']]['release_tags']))
+        self.assertEqual(6,len(data['resume_editions'][data['active_resume_edition']]['public_pdfs']))
+
+    def test_unknown_active_edition_is_rejected(self):
+        data=load();data['active_resume_edition']='missing'
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'projects.json';path.write_text(json.dumps(data),encoding='utf8')
+            with self.assertRaises(AssertionError):load(path)
+
 if __name__=='__main__':unittest.main()

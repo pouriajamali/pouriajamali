@@ -8,7 +8,7 @@ MANIFEST = ROOT / 'evidence/projects.json'
 def load(path=MANIFEST):
     data = json.loads(Path(path).read_text(encoding='utf8'))
     assert data['schema_version'] == 1
-    assert set(data['projects']) == {'execution', 'reliability', 'integrity', 'replay'}
+    assert {'execution', 'reliability', 'integrity', 'replay'} <= set(data['projects'])
     for project in data['projects'].values():
         assert re.fullmatch(r'https://github.com/pouriajamali/[a-z0-9-]+', project['repository'])
         release = project['recommended_verified_release']
@@ -33,13 +33,17 @@ def load(path=MANIFEST):
         assert covered and covered==set(signature['scope']) and len(covered)==len(signature['scope'])
         assert project['site_page'].startswith('https://pouriajamali.site/work/')
     for edition in data['resume_editions'].values():
-        assert set(edition['release_tags']) == set(data['projects'])
+        # Issued editions predate later projects. Their exact tag subsets stay immutable.
+        assert {'execution', 'reliability', 'integrity', 'replay'} <= set(edition['release_tags'])
+        assert set(edition['release_tags']) <= set(data['projects'])
         for key, tag in edition['release_tags'].items():
             project = data['projects'][key]
             assert tag in [project['recommended_verified_release']['tag'], *project['historical_evidence_tags']]
         for row in edition['public_pdfs'].values():
             assert re.fullmatch(r'[0-9a-f]{64}', row['sha256'])
             assert row['language'] in ('en', 'nl', 'es')
+    if 'active_resume_edition' in data:
+        assert data['active_resume_edition'] in data['resume_editions']
     return data
 
 def render_readme(text, data):
@@ -61,6 +65,6 @@ def main():
     data=load();path=ROOT/'README.md';old=path.read_text(encoding='utf8');new=render_readme(old,data)
     if args.write:path.write_text(new,encoding='utf8',newline='\n')
     else:assert old==new,'README release links drifted; run python tools/evidence_registry.py --write'
-    print('PASS: four release contracts and profile links; immutable resume edition registered')
+    print(f"PASS: {len(data['projects'])} release contracts and profile links; immutable resume editions registered")
 
 if __name__=='__main__':main()
