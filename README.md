@@ -8,6 +8,17 @@ I build futures execution and order-risk systems, and modernise payment backends
 
 [Portfolio](https://pouriajamali.site/) · [Resumes & Contact](https://pouriajamali.site/resumes/) · [LinkedIn](https://www.linkedin.com/in/pouria-jamali-a6a04138/)
 
+## Four starting points
+
+For a quick review, these four projects cover trading execution, backend reliability, safe changes and C++/Python validation.
+
+1. **[Trading Execution Lab](https://pouriajamali.site/work/execution-lab/)** — Atomic exposure reservations, retry receipts and an audit outbox in SQLite, with a JWT-protected operator API. [Code](https://github.com/pouriajamali/trading-execution-lab) · [Preview][execution-release]
+2. **[Service Reliability Lab](https://pouriajamali.site/work/service-reliability/)** — Bounded retries, cancellation and circuit recovery; follow the failure traces and telemetry. [Code](https://github.com/pouriajamali/service-reliability-lab) · [Preview][reliability-release]
+3. **[Contract Evolution Lab](https://pouriajamali.site/work/contract-evolution/)** — gRPC/Protobuf compatibility and PostgreSQL expand/backfill/contract, including the behaviour of old and new consumers. [Code](https://github.com/pouriajamali/contract-evolution-lab) · [Preview][contracts-release]
+4. **[C++20 / Python Book Replay](https://pouriajamali.site/work/book-replay-lab/)** — Sequence gaps, snapshot recovery and bounded-depth updates checked against a reference. [Code](https://github.com/pouriajamali/book-replay-lab) · [Preview][replay-release]
+
+The complete catalogue remains below, grouped by engineering area.
+
 ## Try the operator panel
 
 Reserve an order, retry the same request, then inspect the exposure limit. The browser example uses synthetic data and needs no installation or account.
