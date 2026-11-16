@@ -27,6 +27,9 @@ Reserve an order, retry the same request, then inspect the exposure limit. The b
 
 The project catalogue below can be reviewed directly on GitHub. Each repository keeps its code, tests, design decisions and preview downloads together.
 
+<details>
+<summary>All 14 public projects</summary>
+
 ## Trading & connectivity
 
 | Project | What to inspect | Code / preview |
@@ -55,6 +58,8 @@ The project catalogue below can be reviewed directly on GitHub. Each repository 
 | --- | --- | --- |
 | SQLite Recovery Drill | Read-only trial copies checked against explicit application invariants. | [Code](https://github.com/pouriajamali/sqlite-recovery-drill) · [Preview][recovery-release] |
 | .NET Release Doctor | Static runtime/RID/entry metadata and file-inventory checks without running the target. | [Code](https://github.com/pouriajamali/dotnet-release-doctor) · [Preview][doctor-release] |
+
+</details>
 
 ## Professional experience
 
