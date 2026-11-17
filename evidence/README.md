@@ -1,6 +1,6 @@
 # Shared career evidence registry
 
-`projects.json` is the editable authority for the four public labs. Profile links,
+`projects.json` is the editable authority for the fourteen public labs. Profile links,
 the portfolio build projection and resume-generation links consume it. This is
 release provenance and presentation consistency, not a production or skill certificate.
 
@@ -31,3 +31,12 @@ either the current approved releases or an explicit, reproducible issuance snaps
 
 No scheduled process scrapes GitHub or silently updates PDFs, account attachments,
 benchmark claims, employer work or public posts.
+
+
+## Resume edition, 17 November 2026
+
+`layout-polish-20261117` registers the exact English PDF bytes checked by ResumeGo
+(90/A for Backend and Trading). NL/ES bytes and every prior issuance remain
+immutable. Project release recommendations are unchanged; a newer discovered
+tag is not promoted by this resume update. The checker grade is not an employer
+ATS result or an interview prediction. Account distribution is verified separately.

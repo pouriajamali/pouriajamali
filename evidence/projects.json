@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_revision": "2026-11-10.2",
+  "registry_revision": "2026-11-17.1",
   "authority": "https://github.com/pouriajamali/pouriajamali/blob/main/evidence/projects.json",
   "promotion_policy": "Discovery never promotes a release. Review exact commit, CI, downloaded bytes and signature scope, then explicitly approve the recommended release. Issued resume editions remain immutable.",
   "projects": {
@@ -1150,7 +1150,79 @@
         }
       },
       "scope": "Bounded wording and evidence-link corrections to reviewed senior CVs. Frozen identity, B2, six roles, skill inventory and team-attributed achievements preserved. External ATS applies only to separately recorded English file hashes."
+    },
+    "layout-polish-20261117": {
+      "issued_at": "2026-11-17",
+      "release_tags": {
+        "execution": "v0.5.2-preview.1",
+        "reliability": "v0.1.2-preview.1",
+        "integrity": "v0.6.0-preview.1",
+        "replay": "v1.2.1-preview.1",
+        "contracts": "v0.1.0-preview.2",
+        "ownership": "v0.1.0-preview.2",
+        "matching": "v0.1.0-preview.1",
+        "reference": "v0.1.0-preview.2",
+        "fix": "v0.1.0-preview.1",
+        "ledger": "v0.1.0-preview.1",
+        "latency": "v0.1.0-preview.1",
+        "recovery": "v0.1.0-preview.1",
+        "doctor": "v0.1.0-preview.1",
+        "admission": "v0.1.0-preview.1"
+      },
+      "public_pdfs": {
+        "Pouria_Jamali_DotNet_Backend_EN.pdf": {
+          "language": "en",
+          "pages": 2,
+          "sha256": "08e7bc4f6a111ab332b22ccffc6395180bf0ef9c019ce1012848dbd361afe145",
+          "revision_receipt": "layout-polish-20261116-candidate/verification.json",
+          "ats": {
+            "provider": "ResumeGo",
+            "date": "2026-11-17",
+            "score": 90,
+            "grade": "A",
+            "receipt": "career-assets/review-20261117/receipt.json"
+          }
+        },
+        "Pouria_Jamali_Trading_Systems_EN.pdf": {
+          "language": "en",
+          "pages": 2,
+          "sha256": "18bab65e2e5043484e0e2db0bea5dc27224f73bdcb4c75c127dd4159a066c46c",
+          "revision_receipt": "layout-polish-20261116-candidate/verification.json",
+          "ats": {
+            "provider": "ResumeGo",
+            "date": "2026-11-17",
+            "score": 90,
+            "grade": "A",
+            "receipt": "career-assets/review-20261117/receipt.json"
+          }
+        },
+        "Pouria_Jamali_Financial_Backend_NL.pdf": {
+          "language": "nl",
+          "pages": 2,
+          "sha256": "c21202d099b9d81ce1c7adb0bacbefe65be95ae618a70cc97bdf6f9849764891",
+          "revision_receipt": "review-repairs-20261110-final/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_NL.pdf": {
+          "language": "nl",
+          "pages": 2,
+          "sha256": "08b21bc78dd9deffcfcdd1bb7cfc8e0dc271355bd86af94f62584e2b75811f59",
+          "revision_receipt": "review-repairs-20261110-final/verification.json"
+        },
+        "Pouria_Jamali_Financial_Backend_ES.pdf": {
+          "language": "es",
+          "pages": 2,
+          "sha256": "7c031007d572ce2b737920c3f9339ad21a950847e9a8a7e9d9a9b4876618596b",
+          "revision_receipt": "review-repairs-20261110-final/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_ES.pdf": {
+          "language": "es",
+          "pages": 2,
+          "sha256": "e9263e3e8530b07ff8ee5ae4315733ad561d50065c16207414439a4e9d2e3c11",
+          "revision_receipt": "review-repairs-20261110-final/verification.json"
+        }
+      },
+      "scope": "English layout polish only, exact-byte fresh ResumeGo 90/A on 17 November. Existing NL/ES PDFs, factual roles, B2, skill inventory and all accepted project release tags retained."
     }
   },
-  "active_resume_edition": "review-repairs-20261110-final"
+  "active_resume_edition": "layout-polish-20261117"
 }
