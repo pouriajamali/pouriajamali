@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "registry_revision": "2026-11-17.1",
+  "registry_revision": "2026-11-19.1",
   "authority": "https://github.com/pouriajamali/pouriajamali/blob/main/evidence/projects.json",
-  "promotion_policy": "Discovery never promotes a release. Review exact commit, CI, downloaded bytes and signature scope, then explicitly approve the recommended release. Issued resume editions remain immutable.",
+  "promotion_policy": "Discovery alone never changes presentation. current_download_release requires exact-tag identity and every downloaded asset hash plus the trusted checksum signature. recommended_verified_release retains the independently CI-verified evidence baseline. Runtime validation is not inferred from download provenance. Issued PDF editions stay immutable.",
   "projects": {
     "execution": {
       "name": "Trading Execution Lab",
       "repository": "https://github.com/pouriajamali/trading-execution-lab",
       "site_page": "https://pouriajamali.site/work/execution-lab/",
-      "latest_observed_release": "v0.5.2-preview.1",
+      "latest_observed_release": "v0.6.0-preview.1",
       "other_release_channel": null,
       "documents": {
         "case_study": "docs/CASE-STUDY.md",
@@ -87,13 +87,77 @@
         "v0.5.1-preview.1",
         "v0.4.0",
         "v0.2.0"
-      ]
+      ],
+      "current_download_release": {
+        "tag": "v0.6.0-preview.1",
+        "commit": "03b5a35e96197fe19398acc048088666eb8d8e81",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-19T15:19:28.239704+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "trading-execution-lab-v0.6.0-preview.1-linux-x64.tar.gz",
+              "trading-execution-lab-v0.6.0-preview.1-source.zip",
+              "trading-execution-lab-v0.6.0-preview.1-win-x64.zip"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.6.0-preview.1/SHA256SUMS.txt",
+              "sha256": "87c9700cd0fb968d86149c0373319733a09edacc759c849c82511ed732a7d362",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.6.0-preview.1/SHA256SUMS.txt.sig",
+              "sha256": "dde2b1e38e82321382cdb6a09b5ba678f7442b435c2323b08452703bd29f0ff6",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "portfolio-signing.pub",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.6.0-preview.1/portfolio-signing.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "trading-execution-lab-v0.6.0-preview.1-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.6.0-preview.1/trading-execution-lab-v0.6.0-preview.1-linux-x64.tar.gz",
+              "sha256": "a93b5b16113949e8dfef64ad796aebfae25d5ecc57fea59df26842e318acb396",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "trading-execution-lab-v0.6.0-preview.1-source.zip",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.6.0-preview.1/trading-execution-lab-v0.6.0-preview.1-source.zip",
+              "sha256": "064773032e45b632386503bd2a8642f3430a5460736b2d26fb5db9fec40b9894",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "trading-execution-lab-v0.6.0-preview.1-win-x64.zip",
+              "url": "https://github.com/pouriajamali/trading-execution-lab/releases/download/v0.6.0-preview.1/trading-execution-lab-v0.6.0-preview.1-win-x64.zip",
+              "sha256": "87b0df768b4322f99ab432264579cadee69a1931c72657fce09c00aa56bfbff7",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+        "publisher_validation": {
+          "kind": "local_or_mixed_release_receipts",
+          "release_url": "https://github.com/pouriajamali/trading-execution-lab/releases/tag/v0.6.0-preview.1",
+          "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+        }
+      }
     },
     "reliability": {
       "name": "Service Reliability Lab",
       "repository": "https://github.com/pouriajamali/service-reliability-lab",
       "site_page": "https://pouriajamali.site/work/service-reliability/",
-      "latest_observed_release": "v0.1.2-preview.1",
+      "latest_observed_release": "v0.1.3-preview.1",
       "other_release_channel": null,
       "documents": {
         "case_study": "README.md",
@@ -169,14 +233,153 @@
         },
         "scope": "Exact-tag CI and downloaded bytes/signature verified. No new local execution of the packages; no employer/production/performance certification."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [],
+      "current_download_release": {
+        "tag": "v0.1.3-preview.1",
+        "commit": "dff4827b6e9516daa33b14ee7f6367466cfeaf1e",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-19T15:17:20.193021+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "BUILD-MANIFEST.json",
+              "SIGNING-PUBLIC-KEY.pub",
+              "service-reliability-demo.html",
+              "service-reliability-lab-v0.1.3-preview.1.zip"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/SHA256SUMS.txt",
+              "sha256": "21154cdf3ece2bdbd022726c9377d1073b85c7715d928028ec7ea622c7b4a9a8",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/SHA256SUMS.txt.sig",
+              "sha256": "44620e74a77d46bfac6e0ecb57d7f8a2f14624fb33e83651f1b6ba43bd7fa387",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "BUILD-MANIFEST.json",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/BUILD-MANIFEST.json",
+              "sha256": "e64e39d4d5052c88788bb6039b5ae738cf7dd2e379492e936e4084682e75de58",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "service-reliability-demo.html",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/service-reliability-demo.html",
+              "sha256": "86d2fa94978079e209c40543c8f7256761b003b621e33e054a9e0430bb87e32b",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "service-reliability-lab-v0.1.3-preview.1.zip",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/service-reliability-lab-v0.1.3-preview.1.zip",
+              "sha256": "bc13bc48343fd680f061e4c1aa25f8f5f2cbb3a3adc0d2b16b52c499f17e9374",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+        "publisher_validation": {
+          "kind": "local_or_mixed_release_receipts",
+          "release_url": "https://github.com/pouriajamali/service-reliability-lab/releases/tag/v0.1.3-preview.1",
+          "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+        }
+      }
     },
     "integrity": {
       "name": "Market Data Integrity Lab",
       "repository": "https://github.com/pouriajamali/market-data-integrity-lab",
       "site_page": "https://pouriajamali.site/work/market-data-integrity/",
-      "latest_observed_release": "v0.6.0-preview.1",
-      "other_release_channel": "csv-action-v0.1.0-preview.1",
+      "latest_observed_release": "cli-v0.6.2-preview.1",
+      "other_release_channel": {
+        "name": "Command-line technology refresh",
+        "release": {
+          "tag": "cli-v0.6.2-preview.1",
+          "commit": "8c48e6ad827fcfc492b29a754e21361bcca71f0a",
+          "prerelease": true,
+          "downloads": {
+            "checked_at": "2026-11-19T15:17:01.394491+00:00",
+            "sha256_verified_assets": 7,
+            "execution_performed": false,
+            "signature": {
+              "verified": true,
+              "namespace": "file",
+              "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+              "scope": [
+                "market-data-integrity-lab-v0.6.2-preview.1-linux-x64.tar.gz",
+                "market-data-integrity-lab-v0.6.2-preview.1-win-x64.zip",
+                "market-data-integrity-lab-v0.6.2-preview.1.zip",
+                "RELEASE-EVIDENCE.zip"
+              ]
+            },
+            "assets": [
+              {
+                "name": "SHA256SUMS.txt",
+                "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/cli-v0.6.2-preview.1/SHA256SUMS.txt",
+                "sha256": "575c37abc95089914796b3216c50dadadd33257628fc646e722f9d470b59f942",
+                "covered_by_signed_checksums": false
+              },
+              {
+                "name": "SHA256SUMS.txt.sig",
+                "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/cli-v0.6.2-preview.1/SHA256SUMS.txt.sig",
+                "sha256": "440aef1b2a860932554d90e614abc192ec7eb9adbd564a2951ef134f202263fd",
+                "covered_by_signed_checksums": false
+              },
+              {
+                "name": "SIGNING-PUBLIC-KEY.pub",
+                "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/cli-v0.6.2-preview.1/SIGNING-PUBLIC-KEY.pub",
+                "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+                "covered_by_signed_checksums": false
+              },
+              {
+                "name": "market-data-integrity-lab-v0.6.2-preview.1-linux-x64.tar.gz",
+                "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/cli-v0.6.2-preview.1/market-data-integrity-lab-v0.6.2-preview.1-linux-x64.tar.gz",
+                "sha256": "742dcbd0e911f0e747169df8026a39580134e9daa4e9a7060acaef1c5c5cbffd",
+                "covered_by_signed_checksums": true
+              },
+              {
+                "name": "market-data-integrity-lab-v0.6.2-preview.1-win-x64.zip",
+                "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/cli-v0.6.2-preview.1/market-data-integrity-lab-v0.6.2-preview.1-win-x64.zip",
+                "sha256": "eb0a1b3fa820e5a70868daaa1d4095b4933187108b6c2e1d882c6fd6bbdb9ce4",
+                "covered_by_signed_checksums": true
+              },
+              {
+                "name": "market-data-integrity-lab-v0.6.2-preview.1.zip",
+                "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/cli-v0.6.2-preview.1/market-data-integrity-lab-v0.6.2-preview.1.zip",
+                "sha256": "84a935eb73bb6896a0009e47de5a691d3f78e740e77d37070420fef768d22954",
+                "covered_by_signed_checksums": true
+              },
+              {
+                "name": "RELEASE-EVIDENCE.zip",
+                "url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/download/cli-v0.6.2-preview.1/RELEASE-EVIDENCE.zip",
+                "sha256": "5d007c32b4b75a3e6a2ddcfa49bcc65267092fd879a066deca8c3589fa2db04a",
+                "covered_by_signed_checksums": true
+              }
+            ]
+          },
+          "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+          "publisher_validation": {
+            "kind": "local_or_mixed_release_receipts",
+            "release_url": "https://github.com/pouriajamali/market-data-integrity-lab/releases/tag/cli-v0.6.2-preview.1",
+            "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+          }
+        },
+        "relationship": "Separate CLI channel. The existing 60-second GUI demo and its v0.6.0-preview.1 packages remain the primary presentation."
+      },
       "documents": {
         "case_study": "docs/CASE-STUDY.md",
         "design": "README.md"
@@ -412,7 +615,7 @@
       "name": "Fenced Shard Ownership Lab",
       "repository": "https://github.com/pouriajamali/fenced-shard-ownership-lab",
       "site_page": "https://pouriajamali.site/work/fenced-ownership/",
-      "latest_observed_release": "v0.1.0-preview.2",
+      "latest_observed_release": "v0.1.0-preview.8",
       "other_release_channel": null,
       "documents": {
         "case_study": "README.md",
@@ -469,13 +672,78 @@
         },
         "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [],
+      "current_download_release": {
+        "tag": "v0.1.0-preview.8",
+        "commit": "fd935815bcb11dda722957bc0b4dc3a00b3a5312",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-19T15:12:22.301837+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "fenced-shard-ownership-lab-v0.1.0-preview.8-linux-x64.tar.gz",
+              "fenced-shard-ownership-lab-v0.1.0-preview.8-source.zip",
+              "fenced-shard-ownership-lab-v0.1.0-preview.8-win-x64.zip",
+              "SIGNING-PUBLIC-KEY.pub"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/fenced-shard-ownership-lab/releases/download/v0.1.0-preview.8/SHA256SUMS.txt",
+              "sha256": "80334a0190f81359d1ec38bb769df85fa6e7d6c0d009420d14f812f090a8d041",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/fenced-shard-ownership-lab/releases/download/v0.1.0-preview.8/SHA256SUMS.txt.sig",
+              "sha256": "18c572c37813b46d1fdf7a074c66b823d73cc1564b86e97636e6db9f7466c7c4",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/fenced-shard-ownership-lab/releases/download/v0.1.0-preview.8/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fenced-shard-ownership-lab-v0.1.0-preview.8-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/fenced-shard-ownership-lab/releases/download/v0.1.0-preview.8/fenced-shard-ownership-lab-v0.1.0-preview.8-linux-x64.tar.gz",
+              "sha256": "7a7f9dbc1ff1158cc97a4a20de731a91f349d3a45b89a8315f9a6f050d088cd1",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fenced-shard-ownership-lab-v0.1.0-preview.8-source.zip",
+              "url": "https://github.com/pouriajamali/fenced-shard-ownership-lab/releases/download/v0.1.0-preview.8/fenced-shard-ownership-lab-v0.1.0-preview.8-source.zip",
+              "sha256": "ecce8d7c423a065ad5f80c88f01997c4f1abf1540efc6303410f9f25d78bd723",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fenced-shard-ownership-lab-v0.1.0-preview.8-win-x64.zip",
+              "url": "https://github.com/pouriajamali/fenced-shard-ownership-lab/releases/download/v0.1.0-preview.8/fenced-shard-ownership-lab-v0.1.0-preview.8-win-x64.zip",
+              "sha256": "089b0b5e1f48e3445c93b028c56342b66afc8fc0e3e37c57d7892ff52883cd4e",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+        "publisher_validation": {
+          "kind": "local_or_mixed_release_receipts",
+          "release_url": "https://github.com/pouriajamali/fenced-shard-ownership-lab/releases/tag/v0.1.0-preview.8",
+          "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+        }
+      }
     },
     "matching": {
       "name": "Price-Time Matching Core",
       "repository": "https://github.com/pouriajamali/price-time-matching-core",
       "site_page": "https://pouriajamali.site/work/price-time-matching/",
-      "latest_observed_release": "v0.1.0-preview.1",
+      "latest_observed_release": "v0.1.0-preview.2",
       "other_release_channel": null,
       "documents": {
         "case_study": "README.md",
@@ -532,13 +800,77 @@
         },
         "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [],
+      "current_download_release": {
+        "tag": "v0.1.0-preview.2",
+        "commit": "90ecf0d07b8486bd208ba2498ba6933d75fbcdbd",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-19T15:18:15.093462+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "price-time-matching-core-v0.1.0-preview.2-linux-x64.tar.gz",
+              "price-time-matching-core-v0.1.0-preview.2-source.zip",
+              "price-time-matching-core-v0.1.0-preview.2-win-x64.zip"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/price-time-matching-core/releases/download/v0.1.0-preview.2/SHA256SUMS.txt",
+              "sha256": "7620327f9e08d50c2e0c96ee2c5e54be193dfa5037f9efbaa38030d90d7e4a87",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/price-time-matching-core/releases/download/v0.1.0-preview.2/SHA256SUMS.txt.sig",
+              "sha256": "d9d4f909daa793f6f176b2436af4873b97aafaed36a6f6a9e25dc8ca6f612c60",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/price-time-matching-core/releases/download/v0.1.0-preview.2/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "price-time-matching-core-v0.1.0-preview.2-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/price-time-matching-core/releases/download/v0.1.0-preview.2/price-time-matching-core-v0.1.0-preview.2-linux-x64.tar.gz",
+              "sha256": "c72366c1def41acbd3ac7adc3d0a0ccb53c253c2e51486f444d459b4b536612e",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "price-time-matching-core-v0.1.0-preview.2-source.zip",
+              "url": "https://github.com/pouriajamali/price-time-matching-core/releases/download/v0.1.0-preview.2/price-time-matching-core-v0.1.0-preview.2-source.zip",
+              "sha256": "0c36a0a7548c7240c76621bb8f4f149640e6d6ab38c0a96488f420f37d7d034e",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "price-time-matching-core-v0.1.0-preview.2-win-x64.zip",
+              "url": "https://github.com/pouriajamali/price-time-matching-core/releases/download/v0.1.0-preview.2/price-time-matching-core-v0.1.0-preview.2-win-x64.zip",
+              "sha256": "591a8bd7ee9936a7137cb7200a8707f9f6a47852f4c09d098869db0db3cced31",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+        "publisher_validation": {
+          "kind": "local_or_mixed_release_receipts",
+          "release_url": "https://github.com/pouriajamali/price-time-matching-core/releases/tag/v0.1.0-preview.2",
+          "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+        }
+      }
     },
     "reference": {
       "name": "Point-in-Time Reference Lab",
       "repository": "https://github.com/pouriajamali/point-in-time-reference-lab",
       "site_page": "https://pouriajamali.site/work/point-in-time-reference/",
-      "latest_observed_release": "v0.1.0-preview.2",
+      "latest_observed_release": "v0.1.0-preview.4",
       "other_release_channel": null,
       "documents": {
         "case_study": "README.md",
@@ -611,13 +943,77 @@
       },
       "historical_evidence_tags": [
         "v0.1.0-preview.1"
-      ]
+      ],
+      "current_download_release": {
+        "tag": "v0.1.0-preview.4",
+        "commit": "625b1335aaf76a28fc1e7416c0187d356eaa60d8",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-19T15:18:38.840438+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "point-in-time-reference-lab-v0.1.0-preview.4-linux-x64.tar.gz",
+              "point-in-time-reference-lab-v0.1.0-preview.4-source.zip",
+              "point-in-time-reference-lab-v0.1.0-preview.4-win-x64.zip"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.4/SHA256SUMS.txt",
+              "sha256": "a6fd30ab00b676e3f9482d914fff578ef75c2d9bff0508e43a7de621c5e17aba",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.4/SHA256SUMS.txt.sig",
+              "sha256": "e05feb8dda4d072a6c8a2a0c12af86b1cd519d9a7f89ad4566b3dbcd1bedce2a",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.4/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "point-in-time-reference-lab-v0.1.0-preview.4-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.4/point-in-time-reference-lab-v0.1.0-preview.4-linux-x64.tar.gz",
+              "sha256": "43e558eb30eff870db39f4166569f8812ee2c641e67f2210462de0fae1b3f327",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "point-in-time-reference-lab-v0.1.0-preview.4-source.zip",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.4/point-in-time-reference-lab-v0.1.0-preview.4-source.zip",
+              "sha256": "8d8fa5ffe85666ae399c9ebbebe1f50cb073c9f03a798f0067fc09c1937319bb",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "point-in-time-reference-lab-v0.1.0-preview.4-win-x64.zip",
+              "url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/download/v0.1.0-preview.4/point-in-time-reference-lab-v0.1.0-preview.4-win-x64.zip",
+              "sha256": "d910b945dff122510a76bf76e39cc0bc19f99640c051be3e9e0c872d6b1b71c9",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+        "publisher_validation": {
+          "kind": "local_or_mixed_release_receipts",
+          "release_url": "https://github.com/pouriajamali/point-in-time-reference-lab/releases/tag/v0.1.0-preview.4",
+          "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+        }
+      }
     },
     "fix": {
       "name": "FIX Session Recovery Harness",
       "repository": "https://github.com/pouriajamali/fix-session-recovery-harness",
       "site_page": "https://pouriajamali.site/work/fix-session-recovery/",
-      "latest_observed_release": "v0.1.0-preview.1",
+      "latest_observed_release": "v0.1.0-preview.5",
       "other_release_channel": null,
       "documents": {
         "case_study": "README.md",
@@ -674,13 +1070,77 @@
         },
         "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [],
+      "current_download_release": {
+        "tag": "v0.1.0-preview.5",
+        "commit": "1064b609564ff9df44cf08b273685e418eef2d4a",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-19T15:14:39.534166+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "fix-session-recovery-harness-v0.1.0-preview.5-linux-x64.tar.gz",
+              "fix-session-recovery-harness-v0.1.0-preview.5-source.zip",
+              "fix-session-recovery-harness-v0.1.0-preview.5-win-x64.zip"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/SHA256SUMS.txt",
+              "sha256": "752ab21589e13e71a92f057830886b87c2adc8457f3e3d67106f1e8ca3745366",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/SHA256SUMS.txt.sig",
+              "sha256": "027fdb1f2bdd9d28c2b64236ec2447a619096ee746927dc41f077c5e88ead921",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.5-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/fix-session-recovery-harness-v0.1.0-preview.5-linux-x64.tar.gz",
+              "sha256": "394baf19a19731975da25ddc0dcdf425b0531bf8781fde0a737f2c44692d461d",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.5-source.zip",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/fix-session-recovery-harness-v0.1.0-preview.5-source.zip",
+              "sha256": "a7cf8a05157c23dbe7097a0bfca75e0c999dc6c65d39f926d512c14540f45370",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.5-win-x64.zip",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/fix-session-recovery-harness-v0.1.0-preview.5-win-x64.zip",
+              "sha256": "27258b4bea77ed37bef8275b9e5565576c0da7309bc1ab09447058c5a326deb5",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+        "publisher_validation": {
+          "kind": "local_or_mixed_release_receipts",
+          "release_url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/tag/v0.1.0-preview.5",
+          "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+        }
+      }
     },
     "ledger": {
       "name": "Financial Reconciliation Ledger",
       "repository": "https://github.com/pouriajamali/financial-reconciliation-ledger",
       "site_page": "https://pouriajamali.site/work/financial-reconciliation/",
-      "latest_observed_release": "v0.1.0-preview.1",
+      "latest_observed_release": "v0.1.0-preview.3",
       "other_release_channel": null,
       "documents": {
         "case_study": "README.md",
@@ -737,7 +1197,78 @@
         },
         "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [],
+      "current_download_release": {
+        "tag": "v0.1.0-preview.3",
+        "commit": "36cfa2f042a50b2bffa9680dca09dd1d311fa430",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-19T15:14:22.188626+00:00",
+          "sha256_verified_assets": 7,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "financial-reconciliation-ledger-v0.1.0-preview.3-linux-x64.tar.gz",
+              "financial-reconciliation-ledger-v0.1.0-preview.3-source.zip",
+              "financial-reconciliation-ledger-v0.1.0-preview.3-win-x64.zip",
+              "VALIDATION.json"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/financial-reconciliation-ledger/releases/download/v0.1.0-preview.3/SHA256SUMS.txt",
+              "sha256": "86f0cd856bc450c17d45990c9d8e9bedd2c6d325b80974aa5011c609e3dac0a8",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/financial-reconciliation-ledger/releases/download/v0.1.0-preview.3/SHA256SUMS.txt.sig",
+              "sha256": "376f53812bf2b12b9e14c86f92aca9ca96b567fdee30246642e377ad86d24592",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/financial-reconciliation-ledger/releases/download/v0.1.0-preview.3/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "financial-reconciliation-ledger-v0.1.0-preview.3-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/financial-reconciliation-ledger/releases/download/v0.1.0-preview.3/financial-reconciliation-ledger-v0.1.0-preview.3-linux-x64.tar.gz",
+              "sha256": "f838a74048beb2911c12ab4906648231b2002a30ae40a3ce378e87bd7a134547",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "financial-reconciliation-ledger-v0.1.0-preview.3-source.zip",
+              "url": "https://github.com/pouriajamali/financial-reconciliation-ledger/releases/download/v0.1.0-preview.3/financial-reconciliation-ledger-v0.1.0-preview.3-source.zip",
+              "sha256": "f4c20d9b95ab93cd7ffca8039de3454610bd128a59e60782e7b6475b253c98a6",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "financial-reconciliation-ledger-v0.1.0-preview.3-win-x64.zip",
+              "url": "https://github.com/pouriajamali/financial-reconciliation-ledger/releases/download/v0.1.0-preview.3/financial-reconciliation-ledger-v0.1.0-preview.3-win-x64.zip",
+              "sha256": "91e7bcf8f6b2e3c2480179123623b544837dc356f5719e67677870a2367b668a",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "VALIDATION.json",
+              "url": "https://github.com/pouriajamali/financial-reconciliation-ledger/releases/download/v0.1.0-preview.3/VALIDATION.json",
+              "sha256": "fc6f5001049e686316f8fa98b23be09d03937ef78e53d884bddb0f8d205c2242",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+        "publisher_validation": {
+          "kind": "local_or_mixed_release_receipts",
+          "release_url": "https://github.com/pouriajamali/financial-reconciliation-ledger/releases/tag/v0.1.0-preview.3",
+          "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+        }
+      }
     },
     "latency": {
       "name": "Tail-Latency Evidence Bench",
@@ -932,7 +1463,7 @@
       "name": "Data Admission Gate",
       "repository": "https://github.com/pouriajamali/data-admission-gate",
       "site_page": "https://pouriajamali.site/work/data-admission/",
-      "latest_observed_release": "v0.1.0-preview.1",
+      "latest_observed_release": "v0.1.0-preview.3",
       "other_release_channel": null,
       "documents": {
         "case_study": "README.md",
@@ -989,7 +1520,78 @@
         },
         "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [],
+      "current_download_release": {
+        "tag": "v0.1.0-preview.3",
+        "commit": "e48e0bf5ca550fc736c2f6f551c34347f54c00ff",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-19T15:10:51.384490+00:00",
+          "sha256_verified_assets": 7,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "data-admission-gate-v0.1.0-preview.3-linux-x64.tar.gz",
+              "data-admission-gate-v0.1.0-preview.3-source.zip",
+              "data-admission-gate-v0.1.0-preview.3-win-x64.zip",
+              "LOCAL-DELIVERY-RECEIPT.json"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/data-admission-gate/releases/download/v0.1.0-preview.3/SHA256SUMS.txt",
+              "sha256": "df7198dc7ed3d52c276ad8dcc69bf83d5b2b720e87538be81706e236737c8290",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/data-admission-gate/releases/download/v0.1.0-preview.3/SHA256SUMS.txt.sig",
+              "sha256": "db9180cde7b7503a6cf00ac520342a8fa4b70d86515e9d96e46a800d2982ed18",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/data-admission-gate/releases/download/v0.1.0-preview.3/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "cc7038b2d98f856af97b58eb06619ff441fbe9b178da5396f61d1ccdf7a65e7c",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "data-admission-gate-v0.1.0-preview.3-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/data-admission-gate/releases/download/v0.1.0-preview.3/data-admission-gate-v0.1.0-preview.3-linux-x64.tar.gz",
+              "sha256": "364184c80e8024921f64131a4aa57156f63af35e6af8e0cb7d366a040dde3cab",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "data-admission-gate-v0.1.0-preview.3-source.zip",
+              "url": "https://github.com/pouriajamali/data-admission-gate/releases/download/v0.1.0-preview.3/data-admission-gate-v0.1.0-preview.3-source.zip",
+              "sha256": "cb36f5d24f98452ed0dfaad904afa4b346e99cad280c9418cb3535e4c445df93",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "data-admission-gate-v0.1.0-preview.3-win-x64.zip",
+              "url": "https://github.com/pouriajamali/data-admission-gate/releases/download/v0.1.0-preview.3/data-admission-gate-v0.1.0-preview.3-win-x64.zip",
+              "sha256": "24daa8328285e98a6937a2f43fceb4e08c89bdee217ffddd10844f4d4bfb4396",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "LOCAL-DELIVERY-RECEIPT.json",
+              "url": "https://github.com/pouriajamali/data-admission-gate/releases/download/v0.1.0-preview.3/LOCAL-DELIVERY-RECEIPT.json",
+              "sha256": "0950e8cd0503951c013216a4a97afa00a68b3f0ed216c5bbf62e1dcc6e895cb5",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+        "publisher_validation": {
+          "kind": "local_or_mixed_release_receipts",
+          "release_url": "https://github.com/pouriajamali/data-admission-gate/releases/tag/v0.1.0-preview.3",
+          "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+        }
+      }
     }
   },
   "resume_editions": {

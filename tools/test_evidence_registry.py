@@ -7,7 +7,7 @@ class RegistryChecks(unittest.TestCase):
         data=load();sample='[Current preview][execution-release]'
         rendered=render_readme(sample,data)
         self.assertEqual(rendered,render_readme(rendered,data))
-        self.assertIn('/releases/tag/v0.5.2-preview.1',rendered)
+        self.assertIn('/releases/tag/v0.6.0-preview.1',rendered)
 
     def test_main_links_and_unrelated_repositories_stay(self):
         data=load();sample='https://github.com/pouriajamali/trading-execution-lab/blob/main/README.md https://github.com/other/other/releases/tag/v0.0.0-preview.1'
@@ -62,5 +62,28 @@ class RegistryChecks(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path=Path(tmp)/'projects.json';path.write_text(json.dumps(data),encoding='utf8')
             with self.assertRaises(AssertionError):load(path)
+
+
+    def test_new_download_does_not_replace_frozen_ci_or_cv_evidence(self):
+        data=load();p=data['projects']['execution']
+        self.assertEqual(p['current_download_release']['tag'],'v0.6.0-preview.1')
+        self.assertEqual(p['recommended_verified_release']['tag'],'v0.5.2-preview.1')
+        self.assertNotIn('ci',p['current_download_release'])
+        self.assertEqual(data['resume_editions']['layout-polish-20261117']['release_tags']['execution'],'v0.5.2-preview.1')
+        self.assertEqual(data['projects']['integrity']['recommended_verified_release']['tag'],'v0.6.0-preview.1')
+        self.assertEqual(data['projects']['integrity']['other_release_channel']['release']['tag'],'cli-v0.6.2-preview.1')
+
+    def test_invalid_current_download_is_rejected(self):
+        for field in ['signature','coverage','count','hash','commit','scope']:
+            with self.subTest(field=field),tempfile.TemporaryDirectory() as tmp:
+                data=load();r=data['projects']['execution']['current_download_release']
+                if field=='signature':r['downloads']['signature']['verified']=False
+                if field=='coverage':r['downloads']['signature']['scope']=[]
+                if field=='count':r['downloads']['sha256_verified_assets']=0
+                if field=='hash':r['downloads']['assets'][0]['sha256']='invalid'
+                if field=='commit':r['commit']='invalid'
+                if field=='scope':r['verification_scope']=''
+                path=Path(tmp)/'projects.json';path.write_text(json.dumps(data),encoding='utf8')
+                with self.assertRaises(AssertionError):load(path)
 
 if __name__=='__main__':unittest.main()

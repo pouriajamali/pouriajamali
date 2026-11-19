@@ -40,3 +40,20 @@ benchmark claims, employer work or public posts.
 immutable. Project release recommendations are unchanged; a newer discovered
 tag is not promoted by this resume update. The checker grade is not an employer
 ATS result or an interview prediction. Account distribution is verified separately.
+
+
+## Current downloads and frozen evidence, 19 November 2026
+
+`current_download_release` records a newer download only after exact-tag identity,
+all actual package hashes and the known SSH checksum signature are checked.
+It does not inherit the older release's CI result. `recommended_verified_release`
+retains the CI-verified evidence baseline; the original strict CI checks remain.
+Publisher-reported local runtime checks are identified in each newer release entry.
+This career update downloaded and inspected artifacts without running the lab binaries.
+
+Market Data Integrity's newer CLI technology refresh is a separate channel. Its
+existing 60-second GUI demonstration keeps the matching GUI release. The issued
+CVs retain their original tested versions, counts and hashes; they are not silently
+rewritten merely because a software download changes. Current download and design
+links are generated from this registry. The stable portfolio design redirect is
+updated during the same site build.

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "execution",
+    "dimensions": [
+      1000,
+      250
+    ],
+    "gif_bytes": 40845,
+    "frames": 3,
+    "scope": "Illustration of a documented synthetic scenario; no runtime recording or performance result implied."
+  },
+  {
+    "id": "reliability",
+    "dimensions": [
+      1000,
+      250
+    ],
+    "gif_bytes": 42949,
+    "frames": 3,
+    "scope": "Illustration of a documented synthetic scenario; no runtime recording or performance result implied."
+  },
+  {
+    "id": "contracts",
+    "dimensions": [
+      1000,
+      250
+    ],
+    "gif_bytes": 43738,
+    "frames": 3,
+    "scope": "Illustration of a documented synthetic scenario; no runtime recording or performance result implied."
+  },
+  {
+    "id": "replay",
+    "dimensions": [
+      1000,
+      250
+    ],
+    "gif_bytes": 38678,
+    "frames": 3,
+    "scope": "Illustration of a documented synthetic scenario; no runtime recording or performance result implied."
+  }
+]

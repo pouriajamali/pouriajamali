@@ -5,6 +5,27 @@ import argparse, json, re
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'evidence/projects.json'
 
+def validate_download(project, release):
+    assert re.fullmatch(r'(?:cli-)?v[0-9]+\.[0-9]+\.[0-9]+-preview\.[0-9]+',release['tag'])
+    assert re.fullmatch(r'[0-9a-f]{40}',release['commit'])
+    d=release['downloads'];a=d['assets'];sig=d['signature']
+    assert d['execution_performed'] is False
+    assert a and d['sha256_verified_assets']==len(a)
+    assert len({x['name'] for x in a})==len(a)
+    assert sig['verified'] is True and sig['namespace']=='file'
+    assert sig['trusted_key_fingerprint']=='SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU'
+    for x in a:
+        assert re.fullmatch(r'[A-Za-z0-9_.-]+',x['name'])
+        assert re.fullmatch(r'[0-9a-f]{64}',x['sha256'])
+        assert x['url']==project['repository']+'/releases/download/'+release['tag']+'/'+x['name']
+        assert type(x['covered_by_signed_checksums']) is bool
+    covered={x['name'] for x in a if x['covered_by_signed_checksums']}
+    assert covered and covered==set(sig['scope']) and len(covered)==len(sig['scope'])
+    assert release['verification_scope'] and release['publisher_validation']['release_url']==project['repository']+'/releases/tag/'+release['tag']
+
+def download_release(project):
+    return project.get('current_download_release',project['recommended_verified_release'])
+
 def load(path=MANIFEST):
     data = json.loads(Path(path).read_text(encoding='utf8'))
     assert data['schema_version'] == 1
@@ -32,6 +53,8 @@ def load(path=MANIFEST):
         covered={a['name'] for a in assets if a['covered_by_signed_checksums']}
         assert covered and covered==set(signature['scope']) and len(covered)==len(signature['scope'])
         assert project['site_page'].startswith('https://pouriajamali.site/work/')
+        if 'current_download_release' in project:validate_download(project,project['current_download_release'])
+        if project.get('other_release_channel') and 'release' in project['other_release_channel']:validate_download(project,project['other_release_channel']['release'])
     for edition in data['resume_editions'].values():
         # Issued editions predate later projects. Their exact tag subsets stay immutable.
         assert {'execution', 'reliability', 'integrity', 'replay'} <= set(edition['release_tags'])
@@ -50,7 +73,7 @@ def render_readme(text, data):
     start='<!-- evidence-release-links:begin -->';end='<!-- evidence-release-links:end -->'
     definitions=[]
     for key,p in data['projects'].items():
-        tag=p['recommended_verified_release']['tag'];repo=p['repository']
+        tag=download_release(p)['tag'];repo=p['repository']
         definitions += [f'[{key}-release]: {repo}/releases/tag/{tag}',
           f'[{key}-case]: {repo}/blob/{tag}/{p["documents"]["case_study"]}',
           f'[{key}-design]: {repo}/blob/{tag}/{p["documents"]["design"]}']
