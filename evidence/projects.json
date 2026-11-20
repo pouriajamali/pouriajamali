@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_revision": "2026-11-20.1",
+  "registry_revision": "2026-11-20.2",
   "authority": "https://github.com/pouriajamali/pouriajamali/blob/main/evidence/projects.json",
   "promotion_policy": "Discovery alone never changes presentation. current_download_release requires exact-tag identity and every downloaded asset hash plus the trusted checksum signature. recommended_verified_release retains the independently CI-verified evidence baseline. Runtime validation is not inferred from download provenance. Issued PDF editions stay immutable.",
   "projects": {
@@ -2230,7 +2230,79 @@
         ]
       },
       "scope": "Two relevant independent projects per target. Professional history, skills, education and B2 preserved exactly from accepted source blocks. No benchmark or employer claims inferred from samples. Previous ATS scores apply only to previous edition bytes."
+    },
+    "ats-polish-20261120": {
+      "issued_at": "2026-11-20",
+      "release_tags": {
+        "execution": "v0.6.0-preview.1",
+        "reliability": "v0.1.4-preview.1",
+        "integrity": "v0.6.0-preview.1",
+        "replay": "v1.2.1-preview.1",
+        "contracts": "v0.1.0-preview.2",
+        "ownership": "v0.1.0-preview.8",
+        "matching": "v0.1.0-preview.2",
+        "reference": "v0.1.0-preview.4",
+        "fix": "v0.1.0-preview.6",
+        "ledger": "v0.1.0-preview.3",
+        "latency": "v0.1.0-preview.2",
+        "recovery": "v0.1.0-preview.2",
+        "doctor": "v0.1.0-preview.2",
+        "admission": "v0.1.0-preview.3"
+      },
+      "public_pdfs": {
+        "Pouria_Jamali_DotNet_Backend_EN.pdf": {
+          "language": "en",
+          "pages": 2,
+          "sha256": "5f9d3f4f4e0ddeb176ca9a1e8218005945661596f14137d4331efbf33b6a60b4",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_EN.pdf": {
+          "language": "en",
+          "pages": 2,
+          "sha256": "bbdbb7880a44876ed14c79f0a11c4e31b2e7af0f2e5c7195000c0e43342e3097",
+          "revision_receipt": "ats-polish-20261120/verification.json"
+        },
+        "Pouria_Jamali_Financial_Backend_NL.pdf": {
+          "language": "nl",
+          "pages": 2,
+          "sha256": "2f2922ef9c13cd2eb952d62ccbecf1856a318c20df96f9eaa179c4ffa5df06b7",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_NL.pdf": {
+          "language": "nl",
+          "pages": 2,
+          "sha256": "8d2d5d765788cd5360a169d6f6f9a45e722354f1900182576ea330866ebb6b21",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        },
+        "Pouria_Jamali_Financial_Backend_ES.pdf": {
+          "language": "es",
+          "pages": 2,
+          "sha256": "b2b4a17afae34f682ed07ae5078ec587d1e3118ec0d4f40b2b1adba3c1d72368",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_ES.pdf": {
+          "language": "es",
+          "pages": 2,
+          "sha256": "9f5f769b73e053ea79ff3d71b205be583fa59aae9d5d7c77f1847f1a4f8c006f",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        }
+      },
+      "selected_projects": {
+        "trading": [
+          "execution",
+          "fix"
+        ],
+        "backend": [
+          "ledger",
+          "contracts"
+        ],
+        "combined": [
+          "execution",
+          "ledger"
+        ]
+      },
+      "scope": "Two relevant independent projects per target. Professional history, skills, education and B2 preserved exactly from accepted source blocks. No benchmark or employer claims inferred from samples. Previous ATS scores apply only to previous edition bytes. Trading English only: four to 4. Other five public PDFs unchanged."
     }
   },
-  "active_resume_edition": "focused-evidence-20261120-r2"
+  "active_resume_edition": "ats-polish-20261120"
 }

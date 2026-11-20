@@ -16,7 +16,7 @@ I build futures execution and order-risk systems, and modernise payment backends
 
 ## Four illustrated examples
 
-Open a repository to inspect the implementation. Each short illustration follows a documented synthetic scenario.
+Start with the decision and its test evidence below each illustration, then open the repository for the implementation. Each illustration follows a documented synthetic scenario.
 
 ### [Trading Execution Lab](https://github.com/pouriajamali/trading-execution-lab)
 
@@ -24,7 +24,7 @@ Open a repository to inspect the implementation. Each short illustration follows
 
 C# application and tests; Python verification tools. Inspect the transaction that binds order state, the retry receipt and audit outbox.
 
-[Try the browser demo](https://pouriajamali.site/demo/operator-panel/) · [Preview][execution-release] · [Design][execution-design]
+[Try the browser demo](https://pouriajamali.site/demo/operator-panel/) · [Preview][execution-release] · [Decision & tests][execution-design]
 
 ### [Service Reliability Lab](https://github.com/pouriajamali/service-reliability-lab)
 
@@ -32,7 +32,7 @@ C# application and tests; Python verification tools. Inspect the transaction tha
 
 C# policy, executable checks and recorded traces. Follow bounded retries, cancellation and the single recovery probe.
 
-[Try the browser demo](https://pouriajamali.site/demo/service-reliability/) · [Preview][reliability-release] · [Design][reliability-design]
+[Try the browser demo](https://pouriajamali.site/demo/service-reliability/) · [Preview][reliability-release] · [Decision & tests][reliability-design]
 
 ### [Contract Evolution Lab](https://github.com/pouriajamali/contract-evolution-lab)
 
@@ -40,7 +40,7 @@ C# policy, executable checks and recorded traces. Follow bounded retries, cancel
 
 C# producer/consumer applications; Python orchestration. Review semantic compatibility and PostgreSQL expand/backfill/contract boundaries.
 
-[Preview][contracts-release] · [Design][contracts-design]
+[Preview][contracts-release] · [Decision & tests][contracts-design]
 
 ### [C++20 / Python Book Replay](https://github.com/pouriajamali/book-replay-lab)
 
@@ -48,7 +48,7 @@ C# producer/consumer applications; Python orchestration. Review semantic compati
 
 Independent C++ and Python implementations. Inspect expected states, sequence gaps and explicit snapshot recovery.
 
-[Preview][replay-release] · [Design][replay-design]
+[Preview][replay-release] · [Decision & tests][replay-design]
 
 <sub>The diagrams illustrate behaviour; the linked source, tests and release notes carry the evidence. All fourteen projects remain in the catalogue below.</sub>
 
