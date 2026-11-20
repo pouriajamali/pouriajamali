@@ -57,3 +57,24 @@ CVs retain their original tested versions, counts and hashes; they are not silen
 rewritten merely because a software download changes. Current download and design
 links are generated from this registry. The stable portfolio design redirect is
 updated during the same site build.
+
+
+## Focused review paths, 20 November 2026
+
+`focused-evidence-20261120-r2` preserves the accepted professional history,
+skills, education and B2 text while selecting two independent projects per CV:
+Execution/FIX for Trading, Ledger/Contract Evolution for Backend, and
+Execution/Ledger for the combined edition. All fourteen repositories remain in
+the profile catalogue. Earlier editions and their exact-byte ATS results remain
+immutable; no earlier checker grade is assigned to these revised PDFs.
+
+Five current downloads were verified by asset hashes and the trusted SSH key.
+For FIX split downloads, both checksum sets, all ordered parts and the joined
+original archive hashes were checked. Download provenance does not establish
+runtime correctness. CI baselines retain their original commits and results.
+This documentation update uses local registry tests and `[skip ci]`; no new
+GitHub Actions run or package execution is claimed.
+
+Tail Latency retains its current standalone-oracle limitations. The M1 gate's
+external configuration/invocation witness is a separate evidence boundary;
+documentation clarification is not a runtime fix.

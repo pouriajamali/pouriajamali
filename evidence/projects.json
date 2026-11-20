@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_revision": "2026-11-19.1",
+  "registry_revision": "2026-11-20.1",
   "authority": "https://github.com/pouriajamali/pouriajamali/blob/main/evidence/projects.json",
   "promotion_policy": "Discovery alone never changes presentation. current_download_release requires exact-tag identity and every downloaded asset hash plus the trusted checksum signature. recommended_verified_release retains the independently CI-verified evidence baseline. Runtime validation is not inferred from download provenance. Issued PDF editions stay immutable.",
   "projects": {
@@ -233,13 +233,15 @@
         },
         "scope": "Exact-tag CI and downloaded bytes/signature verified. No new local execution of the packages; no employer/production/performance certification."
       },
-      "historical_evidence_tags": [],
+      "historical_evidence_tags": [
+        "v0.1.3-preview.1"
+      ],
       "current_download_release": {
-        "tag": "v0.1.3-preview.1",
-        "commit": "dff4827b6e9516daa33b14ee7f6367466cfeaf1e",
+        "tag": "v0.1.4-preview.1",
+        "commit": "bfb9b612a333483993d302e95682c556ac978a0c",
         "prerelease": true,
         "downloads": {
-          "checked_at": "2026-11-19T15:17:20.193021+00:00",
+          "checked_at": "2026-11-20T16:27:59.658379+00:00",
           "sha256_verified_assets": 6,
           "execution_performed": false,
           "signature": {
@@ -250,53 +252,53 @@
               "BUILD-MANIFEST.json",
               "SIGNING-PUBLIC-KEY.pub",
               "service-reliability-demo.html",
-              "service-reliability-lab-v0.1.3-preview.1.zip"
+              "service-reliability-lab-v0.1.4-preview.1.zip"
             ]
           },
           "assets": [
             {
               "name": "SHA256SUMS.txt",
-              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/SHA256SUMS.txt",
-              "sha256": "21154cdf3ece2bdbd022726c9377d1073b85c7715d928028ec7ea622c7b4a9a8",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.4-preview.1/SHA256SUMS.txt",
+              "sha256": "41ba54b0f44d6bc6c922802a1fc8ca6837dfe2d285cbfd25414c4db04aef4283",
               "covered_by_signed_checksums": false
             },
             {
               "name": "SHA256SUMS.txt.sig",
-              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/SHA256SUMS.txt.sig",
-              "sha256": "44620e74a77d46bfac6e0ecb57d7f8a2f14624fb33e83651f1b6ba43bd7fa387",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.4-preview.1/SHA256SUMS.txt.sig",
+              "sha256": "2c818760403cb4fa389ad07a3691e97385848e2eea74e41775f436007272191e",
               "covered_by_signed_checksums": false
             },
             {
               "name": "SIGNING-PUBLIC-KEY.pub",
-              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.4-preview.1/SIGNING-PUBLIC-KEY.pub",
               "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
               "covered_by_signed_checksums": true
             },
             {
               "name": "BUILD-MANIFEST.json",
-              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/BUILD-MANIFEST.json",
-              "sha256": "e64e39d4d5052c88788bb6039b5ae738cf7dd2e379492e936e4084682e75de58",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.4-preview.1/BUILD-MANIFEST.json",
+              "sha256": "b73230eb8e85542e2d68d3961d5f612c56dbbb6506b7120f1927ba4f36c37c10",
               "covered_by_signed_checksums": true
             },
             {
               "name": "service-reliability-demo.html",
-              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/service-reliability-demo.html",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.4-preview.1/service-reliability-demo.html",
               "sha256": "86d2fa94978079e209c40543c8f7256761b003b621e33e054a9e0430bb87e32b",
               "covered_by_signed_checksums": true
             },
             {
-              "name": "service-reliability-lab-v0.1.3-preview.1.zip",
-              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.3-preview.1/service-reliability-lab-v0.1.3-preview.1.zip",
-              "sha256": "bc13bc48343fd680f061e4c1aa25f8f5f2cbb3a3adc0d2b16b52c499f17e9374",
+              "name": "service-reliability-lab-v0.1.4-preview.1.zip",
+              "url": "https://github.com/pouriajamali/service-reliability-lab/releases/download/v0.1.4-preview.1/service-reliability-lab-v0.1.4-preview.1.zip",
+              "sha256": "6c866b19409b7bfb4d769ed63a4d401167cf6da3268607a70c32589817f5d4cd",
               "covered_by_signed_checksums": true
             }
           ]
         },
-        "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+        "verification_scope": "Every public asset hash and trusted SSH checksum signature verified. Split transport, where used, was joined and matched to the signed original archive hash. Packages were not executed. Publisher local validation is not new CI evidence.",
         "publisher_validation": {
-          "kind": "local_or_mixed_release_receipts",
-          "release_url": "https://github.com/pouriajamali/service-reliability-lab/releases/tag/v0.1.3-preview.1",
-          "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+          "kind": "publisher_local_release_receipts",
+          "release_url": "https://github.com/pouriajamali/service-reliability-lab/releases/tag/v0.1.4-preview.1",
+          "claim_scope": "Release notes retain their original OS, runtime and test boundaries; GitHub Actions was not run for this update."
         }
       }
     },
@@ -1070,69 +1072,203 @@
         },
         "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
       },
-      "historical_evidence_tags": [],
+      "historical_evidence_tags": [
+        "v0.1.0-preview.5"
+      ],
       "current_download_release": {
-        "tag": "v0.1.0-preview.5",
-        "commit": "1064b609564ff9df44cf08b273685e418eef2d4a",
+        "tag": "v0.1.0-preview.6",
+        "commit": "5bb0931151ddf1f09ad17f80a752fdeabe041950",
         "prerelease": true,
         "downloads": {
-          "checked_at": "2026-11-19T15:14:39.534166+00:00",
-          "sha256_verified_assets": 6,
+          "checked_at": "2026-11-20T16:33:00.408105+00:00",
+          "sha256_verified_assets": 17,
           "execution_performed": false,
           "signature": {
             "verified": true,
             "namespace": "file",
             "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
             "scope": [
-              "fix-session-recovery-harness-v0.1.0-preview.5-linux-x64.tar.gz",
-              "fix-session-recovery-harness-v0.1.0-preview.5-source.zip",
-              "fix-session-recovery-harness-v0.1.0-preview.5-win-x64.zip"
+              "fix-session-recovery-harness-v0.1.0-preview.6-source.zip",
+              "SIGNING-PUBLIC-KEY.pub",
+              "PARTS-MANIFEST.json",
+              "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part001",
+              "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part002",
+              "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part003",
+              "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part004",
+              "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part005",
+              "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part001",
+              "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part002",
+              "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part003",
+              "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part004",
+              "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part005"
+            ],
+            "checksum_sets": [
+              {
+                "checksums": "SHA256SUMS.txt",
+                "signature": "SHA256SUMS.txt.sig",
+                "scope": [
+                  "fix-session-recovery-harness-v0.1.0-preview.6-source.zip",
+                  "SIGNING-PUBLIC-KEY.pub"
+                ],
+                "signed_archive_hashes": {
+                  "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz": "6a7db89d2c1eb33e21f4af6f8fc8c6d31d1f340abfdade110b3b5e215c684462",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip": "3d0198721021b1dde85f1b789759d27ad98f632dd9aee0fb49cb4ba702a1c8f9"
+                }
+              },
+              {
+                "checksums": "PARTS-SHA256SUMS.txt",
+                "signature": "PARTS-SHA256SUMS.txt.sig",
+                "scope": [
+                  "PARTS-MANIFEST.json",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part001",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part002",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part003",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part004",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part005",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part001",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part002",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part003",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part004",
+                  "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part005"
+                ],
+                "signed_archive_hashes": {}
+              }
             ]
           },
           "assets": [
             {
               "name": "SHA256SUMS.txt",
-              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/SHA256SUMS.txt",
-              "sha256": "752ab21589e13e71a92f057830886b87c2adc8457f3e3d67106f1e8ca3745366",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/SHA256SUMS.txt",
+              "sha256": "144c6ee426e8e56dd8786ef2c941ec39a7ae14e72f1e86d8c282bfba7bad6768",
               "covered_by_signed_checksums": false
             },
             {
               "name": "SHA256SUMS.txt.sig",
-              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/SHA256SUMS.txt.sig",
-              "sha256": "027fdb1f2bdd9d28c2b64236ec2447a619096ee746927dc41f077c5e88ead921",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/SHA256SUMS.txt.sig",
+              "sha256": "65882cd9f485d11fc536a1d8440503ad3f6aa05b543cf3dbdb68e901f9a4b658",
               "covered_by_signed_checksums": false
             },
             {
               "name": "SIGNING-PUBLIC-KEY.pub",
-              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/SIGNING-PUBLIC-KEY.pub",
               "sha256": "a59fbecc53a0b3109212b70a3a51247dbd3529512d189ac2462a27a057dad671",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "PARTS-SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/PARTS-SHA256SUMS.txt",
+              "sha256": "32403b45cf3871fb360aa2f611ad073a166a65ee37172de798f8791f45f5f26c",
               "covered_by_signed_checksums": false
             },
             {
-              "name": "fix-session-recovery-harness-v0.1.0-preview.5-linux-x64.tar.gz",
-              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/fix-session-recovery-harness-v0.1.0-preview.5-linux-x64.tar.gz",
-              "sha256": "394baf19a19731975da25ddc0dcdf425b0531bf8781fde0a737f2c44692d461d",
+              "name": "PARTS-SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/PARTS-SHA256SUMS.txt.sig",
+              "sha256": "0d287e878cbe5684717346b683018f84eed4d6dab7e0c990728cc0b7081f1524",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "PARTS-MANIFEST.json",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/PARTS-MANIFEST.json",
+              "sha256": "2eb9bf6930b6656dc6d5c2635653f58ef08e190b427e2dc29630b2861e286bef",
               "covered_by_signed_checksums": true
             },
             {
-              "name": "fix-session-recovery-harness-v0.1.0-preview.5-source.zip",
-              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/fix-session-recovery-harness-v0.1.0-preview.5-source.zip",
-              "sha256": "a7cf8a05157c23dbe7097a0bfca75e0c999dc6c65d39f926d512c14540f45370",
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-source.zip",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-source.zip",
+              "sha256": "003ef9082f0e71ea50bea0c7899ee5b295d675b4d5c12a1f874b57caa6a9c27e",
               "covered_by_signed_checksums": true
             },
             {
-              "name": "fix-session-recovery-harness-v0.1.0-preview.5-win-x64.zip",
-              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.5/fix-session-recovery-harness-v0.1.0-preview.5-win-x64.zip",
-              "sha256": "27258b4bea77ed37bef8275b9e5565576c0da7309bc1ab09447058c5a326deb5",
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part001",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part001",
+              "sha256": "9b954cb07d683d0c5883a35028793f654047aa7e3b8cdd7a59fbec3be07519c1",
               "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part002",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part002",
+              "sha256": "d32fa6bb978bb273ee7a425176441738975bde7f364c3c9bf290e62cff6abf7e",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part003",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part003",
+              "sha256": "3317acab204b0869e875b4e8b95c32db20c96569abb86cf6957f3dfb4ef48004",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part004",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part004",
+              "sha256": "2df48c2ea86b3c729ae6b215430f4947cae6480e910f0ae851f7f207150d09be",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part005",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part005",
+              "sha256": "6f863fafeb34202af44276157695ffee06d97899742669f9d1f10302f71d926e",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part001",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part001",
+              "sha256": "1a8db7d27f15373d12c6478eb9835f33c48b2d0df9beb7449f1d52bb0a2be0f1",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part002",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part002",
+              "sha256": "8b7ba892f0da2790569c650247bc68334605581395895a4bad9f0b4fb9b3b4a2",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part003",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part003",
+              "sha256": "17d1ad2afa9e6f08e07d361881888baeab92d8c1a4d23cb695e4ef377c8c1a76",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part004",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part004",
+              "sha256": "7b046e08afae0586e9d042968e3cfdea40904a1150e5e79e5bc66abbea14a8d6",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part005",
+              "url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/download/v0.1.0-preview.6/fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part005",
+              "sha256": "78a75db62bdf35cbc6366538efb50977bad7f36bdee18f9003ed8961e607edb5",
+              "covered_by_signed_checksums": true
+            }
+          ],
+          "reconstructed_archives": [
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz",
+              "sha256": "6a7db89d2c1eb33e21f4af6f8fc8c6d31d1f340abfdade110b3b5e215c684462",
+              "parts": [
+                "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part001",
+                "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part002",
+                "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part003",
+                "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part004",
+                "fix-session-recovery-harness-v0.1.0-preview.6-linux-x64.tar.gz.part005"
+              ]
+            },
+            {
+              "name": "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip",
+              "sha256": "3d0198721021b1dde85f1b789759d27ad98f632dd9aee0fb49cb4ba702a1c8f9",
+              "parts": [
+                "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part001",
+                "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part002",
+                "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part003",
+                "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part004",
+                "fix-session-recovery-harness-v0.1.0-preview.6-win-x64.zip.part005"
+              ]
             }
           ]
         },
-        "verification_scope": "Downloaded every signed asset and verified SHA-256 plus the existing trusted SSH file signature. Packages were not executed in this career update. Runtime tests in release notes are publisher-reported local evidence, not a new CI result.",
+        "verification_scope": "Every public asset hash and trusted SSH checksum signature verified. Split transport, where used, was joined and matched to the signed original archive hash. Packages were not executed. Publisher local validation is not new CI evidence.",
         "publisher_validation": {
-          "kind": "local_or_mixed_release_receipts",
-          "release_url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/tag/v0.1.0-preview.5",
-          "claim_scope": "Read the release-specific local/CI boundaries; no runtime or cloud-CI result is inferred from this download check."
+          "kind": "publisher_local_release_receipts",
+          "release_url": "https://github.com/pouriajamali/fix-session-recovery-harness/releases/tag/v0.1.0-preview.6",
+          "claim_scope": "Release notes retain their original OS, runtime and test boundaries; GitHub Actions was not run for this update."
         }
       }
     },
@@ -1331,7 +1467,73 @@
         },
         "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [
+        "v0.1.0-preview.1"
+      ],
+      "current_download_release": {
+        "tag": "v0.1.0-preview.2",
+        "commit": "18e1d4a33e694f20fbcb20781e69fbefb663d426",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-20T16:31:35.680615+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "tail-latency-evidence-bench-v0.1.0-preview.2-linux-x64.tar.gz",
+              "tail-latency-evidence-bench-v0.1.0-preview.2-source.zip",
+              "tail-latency-evidence-bench-v0.1.0-preview.2-win-x64.zip"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/tail-latency-evidence-bench/releases/download/v0.1.0-preview.2/SHA256SUMS.txt",
+              "sha256": "2b631cd3329379ab59dba039f3b82c559d430436537eb020b06af21439b2c792",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/tail-latency-evidence-bench/releases/download/v0.1.0-preview.2/SHA256SUMS.txt.sig",
+              "sha256": "65d3d3f2d68907bfd7b8a5a40aa5438cb02a394c15c019887b25250641915338",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/tail-latency-evidence-bench/releases/download/v0.1.0-preview.2/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "cc7038b2d98f856af97b58eb06619ff441fbe9b178da5396f61d1ccdf7a65e7c",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "tail-latency-evidence-bench-v0.1.0-preview.2-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/tail-latency-evidence-bench/releases/download/v0.1.0-preview.2/tail-latency-evidence-bench-v0.1.0-preview.2-linux-x64.tar.gz",
+              "sha256": "5faf1529393a4626a0c936af41aab69f8db3401d148750cf9a89b01f893db8c8",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "tail-latency-evidence-bench-v0.1.0-preview.2-source.zip",
+              "url": "https://github.com/pouriajamali/tail-latency-evidence-bench/releases/download/v0.1.0-preview.2/tail-latency-evidence-bench-v0.1.0-preview.2-source.zip",
+              "sha256": "931690e43b95137ec0eff0665859ed63deb40aa463ea243f092e5344ac912736",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "tail-latency-evidence-bench-v0.1.0-preview.2-win-x64.zip",
+              "url": "https://github.com/pouriajamali/tail-latency-evidence-bench/releases/download/v0.1.0-preview.2/tail-latency-evidence-bench-v0.1.0-preview.2-win-x64.zip",
+              "sha256": "522362ab9ffcda0466b20b758fe0fd6f8961853c01022ecafe1a315ecb6371a2",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Every public asset hash and trusted SSH checksum signature verified. Split transport, where used, was joined and matched to the signed original archive hash. Packages were not executed. Publisher local validation is not new CI evidence.",
+        "publisher_validation": {
+          "kind": "publisher_local_release_receipts",
+          "release_url": "https://github.com/pouriajamali/tail-latency-evidence-bench/releases/tag/v0.1.0-preview.2",
+          "claim_scope": "Release notes retain their original OS, runtime and test boundaries; GitHub Actions was not run for this update."
+        }
+      }
     },
     "recovery": {
       "name": "SQLite Recovery Drill",
@@ -1394,7 +1596,73 @@
         },
         "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [
+        "v0.1.0-preview.1"
+      ],
+      "current_download_release": {
+        "tag": "v0.1.0-preview.2",
+        "commit": "4fedc984008ae653ef8d9b16f09675a5ddd81c30",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-20T16:35:19.426766+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "sqlite-recovery-drill-v0.1.0-preview.2-linux-x64.tar.gz",
+              "sqlite-recovery-drill-v0.1.0-preview.2-source.zip",
+              "sqlite-recovery-drill-v0.1.0-preview.2-win-x64.zip"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/sqlite-recovery-drill/releases/download/v0.1.0-preview.2/SHA256SUMS.txt",
+              "sha256": "cb2b2fc88f1c8d9de96a31b6bd0b02f6cce2018f82deb26c3baca186f58cc2af",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/sqlite-recovery-drill/releases/download/v0.1.0-preview.2/SHA256SUMS.txt.sig",
+              "sha256": "bb1e380427dc90650f0f46d477ddb0d1399964d7d22afbf7420aee71ce6994ca",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/sqlite-recovery-drill/releases/download/v0.1.0-preview.2/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "cc7038b2d98f856af97b58eb06619ff441fbe9b178da5396f61d1ccdf7a65e7c",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "sqlite-recovery-drill-v0.1.0-preview.2-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/sqlite-recovery-drill/releases/download/v0.1.0-preview.2/sqlite-recovery-drill-v0.1.0-preview.2-linux-x64.tar.gz",
+              "sha256": "5e374bddd3d8c756239d06faf80fb0f72556377dbedd87dd8c99cba363f3f197",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "sqlite-recovery-drill-v0.1.0-preview.2-source.zip",
+              "url": "https://github.com/pouriajamali/sqlite-recovery-drill/releases/download/v0.1.0-preview.2/sqlite-recovery-drill-v0.1.0-preview.2-source.zip",
+              "sha256": "cfa0fa8f6135d4b26fa8d2d5bf8645f2f26ce18720be88e44aa3a62de74e736d",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "sqlite-recovery-drill-v0.1.0-preview.2-win-x64.zip",
+              "url": "https://github.com/pouriajamali/sqlite-recovery-drill/releases/download/v0.1.0-preview.2/sqlite-recovery-drill-v0.1.0-preview.2-win-x64.zip",
+              "sha256": "29117e753c64aba5a8eb3a620f27caec0b3be90e841cd81c962c552dae4ed66c",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Every public asset hash and trusted SSH checksum signature verified. Split transport, where used, was joined and matched to the signed original archive hash. Packages were not executed. Publisher local validation is not new CI evidence.",
+        "publisher_validation": {
+          "kind": "publisher_local_release_receipts",
+          "release_url": "https://github.com/pouriajamali/sqlite-recovery-drill/releases/tag/v0.1.0-preview.2",
+          "claim_scope": "Release notes retain their original OS, runtime and test boundaries; GitHub Actions was not run for this update."
+        }
+      }
     },
     "doctor": {
       "name": ".NET Release Doctor",
@@ -1457,7 +1725,73 @@
         },
         "scope": "Actual source ZIP hash and signed checksum manifest verified; exact-tag CI passed. Platform binaries were not downloaded or executed in this review. Separate native Windows source tests passed at the recorded reviewed branch commit; no production/cloud/HFT performance certification."
       },
-      "historical_evidence_tags": []
+      "historical_evidence_tags": [
+        "v0.1.0-preview.1"
+      ],
+      "current_download_release": {
+        "tag": "v0.1.0-preview.2",
+        "commit": "9254ccfeb36ef24ccea845d02aff000b0cd8795a",
+        "prerelease": true,
+        "downloads": {
+          "checked_at": "2026-11-20T16:35:28.776094+00:00",
+          "sha256_verified_assets": 6,
+          "execution_performed": false,
+          "signature": {
+            "verified": true,
+            "namespace": "file",
+            "trusted_key_fingerprint": "SHA256:AgU5bZlJSjUu0KsWMmVEEr+BfXpcMVNroTA33bHcQdU",
+            "scope": [
+              "dotnet-release-doctor-v0.1.0-preview.2-linux-x64.tar.gz",
+              "dotnet-release-doctor-v0.1.0-preview.2-source.zip",
+              "dotnet-release-doctor-v0.1.0-preview.2-win-x64.zip"
+            ]
+          },
+          "assets": [
+            {
+              "name": "SHA256SUMS.txt",
+              "url": "https://github.com/pouriajamali/dotnet-release-doctor/releases/download/v0.1.0-preview.2/SHA256SUMS.txt",
+              "sha256": "3ec53f927805db6ad91beaa0fcd06d4a880f916ccc9fcca24c45e84867f51a97",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SHA256SUMS.txt.sig",
+              "url": "https://github.com/pouriajamali/dotnet-release-doctor/releases/download/v0.1.0-preview.2/SHA256SUMS.txt.sig",
+              "sha256": "bb6e560ab412fdd3f4a400953b6e3744eccb2f468f8f920f261f4ba2353d3643",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "SIGNING-PUBLIC-KEY.pub",
+              "url": "https://github.com/pouriajamali/dotnet-release-doctor/releases/download/v0.1.0-preview.2/SIGNING-PUBLIC-KEY.pub",
+              "sha256": "cc7038b2d98f856af97b58eb06619ff441fbe9b178da5396f61d1ccdf7a65e7c",
+              "covered_by_signed_checksums": false
+            },
+            {
+              "name": "dotnet-release-doctor-v0.1.0-preview.2-linux-x64.tar.gz",
+              "url": "https://github.com/pouriajamali/dotnet-release-doctor/releases/download/v0.1.0-preview.2/dotnet-release-doctor-v0.1.0-preview.2-linux-x64.tar.gz",
+              "sha256": "9096aa3764fb59f3cb5269fa46969f761b1ed38c54350e10c113fb6ee0a37d02",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "dotnet-release-doctor-v0.1.0-preview.2-source.zip",
+              "url": "https://github.com/pouriajamali/dotnet-release-doctor/releases/download/v0.1.0-preview.2/dotnet-release-doctor-v0.1.0-preview.2-source.zip",
+              "sha256": "7898f65162be7567462a8bb4506d1758908cbbbeeb899867760f41785752907b",
+              "covered_by_signed_checksums": true
+            },
+            {
+              "name": "dotnet-release-doctor-v0.1.0-preview.2-win-x64.zip",
+              "url": "https://github.com/pouriajamali/dotnet-release-doctor/releases/download/v0.1.0-preview.2/dotnet-release-doctor-v0.1.0-preview.2-win-x64.zip",
+              "sha256": "30efcff9432e5d49441c56d0fa31358c02cf20e6d240fe6f3fcd5a92d854e5d3",
+              "covered_by_signed_checksums": true
+            }
+          ]
+        },
+        "verification_scope": "Every public asset hash and trusted SSH checksum signature verified. Split transport, where used, was joined and matched to the signed original archive hash. Packages were not executed. Publisher local validation is not new CI evidence.",
+        "publisher_validation": {
+          "kind": "publisher_local_release_receipts",
+          "release_url": "https://github.com/pouriajamali/dotnet-release-doctor/releases/tag/v0.1.0-preview.2",
+          "claim_scope": "Release notes retain their original OS, runtime and test boundaries; GitHub Actions was not run for this update."
+        }
+      }
     },
     "admission": {
       "name": "Data Admission Gate",
@@ -1824,7 +2158,79 @@
         }
       },
       "scope": "English layout polish only, exact-byte fresh ResumeGo 90/A on 17 November. Existing NL/ES PDFs, factual roles, B2, skill inventory and all accepted project release tags retained."
+    },
+    "focused-evidence-20261120-r2": {
+      "issued_at": "2026-11-20",
+      "release_tags": {
+        "execution": "v0.6.0-preview.1",
+        "reliability": "v0.1.4-preview.1",
+        "integrity": "v0.6.0-preview.1",
+        "replay": "v1.2.1-preview.1",
+        "contracts": "v0.1.0-preview.2",
+        "ownership": "v0.1.0-preview.8",
+        "matching": "v0.1.0-preview.2",
+        "reference": "v0.1.0-preview.4",
+        "fix": "v0.1.0-preview.6",
+        "ledger": "v0.1.0-preview.3",
+        "latency": "v0.1.0-preview.2",
+        "recovery": "v0.1.0-preview.2",
+        "doctor": "v0.1.0-preview.2",
+        "admission": "v0.1.0-preview.3"
+      },
+      "public_pdfs": {
+        "Pouria_Jamali_DotNet_Backend_EN.pdf": {
+          "language": "en",
+          "pages": 2,
+          "sha256": "5f9d3f4f4e0ddeb176ca9a1e8218005945661596f14137d4331efbf33b6a60b4",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_EN.pdf": {
+          "language": "en",
+          "pages": 2,
+          "sha256": "e1918fab0c21b0028b74e72e04ecc23a9f7679abf3826bb4d03533898ef48e41",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        },
+        "Pouria_Jamali_Financial_Backend_NL.pdf": {
+          "language": "nl",
+          "pages": 2,
+          "sha256": "2f2922ef9c13cd2eb952d62ccbecf1856a318c20df96f9eaa179c4ffa5df06b7",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_NL.pdf": {
+          "language": "nl",
+          "pages": 2,
+          "sha256": "8d2d5d765788cd5360a169d6f6f9a45e722354f1900182576ea330866ebb6b21",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        },
+        "Pouria_Jamali_Financial_Backend_ES.pdf": {
+          "language": "es",
+          "pages": 2,
+          "sha256": "b2b4a17afae34f682ed07ae5078ec587d1e3118ec0d4f40b2b1adba3c1d72368",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        },
+        "Pouria_Jamali_Trading_Systems_ES.pdf": {
+          "language": "es",
+          "pages": 2,
+          "sha256": "9f5f769b73e053ea79ff3d71b205be583fa59aae9d5d7c77f1847f1a4f8c006f",
+          "revision_receipt": "focused-evidence-20261120-r2/verification.json"
+        }
+      },
+      "selected_projects": {
+        "trading": [
+          "execution",
+          "fix"
+        ],
+        "backend": [
+          "ledger",
+          "contracts"
+        ],
+        "combined": [
+          "execution",
+          "ledger"
+        ]
+      },
+      "scope": "Two relevant independent projects per target. Professional history, skills, education and B2 preserved exactly from accepted source blocks. No benchmark or employer claims inferred from samples. Previous ATS scores apply only to previous edition bytes."
     }
   },
-  "active_resume_edition": "layout-polish-20261117"
+  "active_resume_edition": "focused-evidence-20261120-r2"
 }

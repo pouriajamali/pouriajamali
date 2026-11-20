@@ -50,7 +50,7 @@ class RegistryChecks(unittest.TestCase):
 
     def test_active_edition_and_original_snapshot_are_distinct(self):
         data=load()
-        self.assertEqual('layout-polish-20261117',data['active_resume_edition'])
+        self.assertEqual('focused-evidence-20261120-r2',data['active_resume_edition'])
         self.assertEqual('v0.1.0-preview.1',data['resume_editions']['senior-evidence-20261110']['release_tags']['contracts'])
         self.assertEqual('v0.1.0-preview.2',data['resume_editions'][data['active_resume_edition']]['release_tags']['contracts'])
         self.assertEqual(4,len(data['resume_editions']['showcase-20261106']['release_tags']))
@@ -85,5 +85,25 @@ class RegistryChecks(unittest.TestCase):
                 if field=='scope':r['verification_scope']=''
                 path=Path(tmp)/'projects.json';path.write_text(json.dumps(data),encoding='utf8')
                 with self.assertRaises(AssertionError):load(path)
+
+    def test_split_transport_rejects_broken_receipt_bindings(self):
+        for field in ['sets','signature_asset','missing_part','part_order','archive_hash','unbound_archive']:
+            with self.subTest(field=field),tempfile.TemporaryDirectory() as tmp:
+                data=load();d=data['projects']['fix']['current_download_release']['downloads']
+                if field=='sets':del d['signature']['checksum_sets']
+                if field=='signature_asset':d['signature']['checksum_sets'][1]['signature']='missing.sig'
+                if field=='missing_part':d['reconstructed_archives'][0]['parts'].pop()
+                if field=='part_order':d['reconstructed_archives'][0]['parts'].reverse()
+                if field=='archive_hash':d['reconstructed_archives'][0]['sha256']='0'*64
+                if field=='unbound_archive':d['signature']['checksum_sets'][0]['signed_archive_hashes'].clear()
+                path=Path(tmp)/'projects.json';path.write_text(json.dumps(data),encoding='utf8')
+                with self.assertRaises(AssertionError):load(path)
+
+    def test_focused_selection_preserves_old_editions(self):
+        data=load();e=data['resume_editions'][data['active_resume_edition']]
+        self.assertEqual(e['selected_projects']['trading'],['execution','fix'])
+        self.assertEqual(e['selected_projects']['backend'],['ledger','contracts'])
+        self.assertEqual(data['resume_editions']['layout-polish-20261117']['public_pdfs']['Pouria_Jamali_DotNet_Backend_EN.pdf']['sha256'],'08e7bc4f6a111ab332b22ccffc6395180bf0ef9c019ce1012848dbd361afe145')
+        self.assertFalse(any('ats' in r for r in e['public_pdfs'].values()))
 
 if __name__=='__main__':unittest.main()

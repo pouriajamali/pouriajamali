@@ -5,6 +5,38 @@ import argparse, json, re
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'evidence/projects.json'
 
+def validate_transport(downloads):
+    """Bind split transport receipts to signed metadata, exact parts and archive hash."""
+    sig=downloads['signature'];sets=sig.get('checksum_sets')
+    if sets is None:
+        assert not downloads.get('reconstructed_archives'), 'Reconstruction needs signed checksum sets'
+        return
+    assets={a['name']:a for a in downloads['assets']}
+    assert sets and len({s['checksums'] for s in sets})==len(sets)
+    coverage=set();originals={}
+    for s in sets:
+        assert s['signature']==s['checksums']+'.sig'
+        assert s['checksums'] in assets and s['signature'] in assets
+        assert assets[s['checksums']]['covered_by_signed_checksums'] is False
+        assert assets[s['signature']]['covered_by_signed_checksums'] is False
+        assert len(set(s['scope']))==len(s['scope'])
+        assert set(s['scope']) <= set(assets)
+        coverage.update(s['scope'])
+        for name,h in s['signed_archive_hashes'].items():
+            assert re.fullmatch(r'[A-Za-z0-9_.-]+',name) and re.fullmatch(r'[0-9a-f]{64}',h)
+            assert name not in originals
+            originals[name]=h
+    assert coverage==set(sig['scope'])
+    joined=downloads.get('reconstructed_archives',[])
+    assert len({r['name'] for r in joined})==len(joined)
+    assert {r['name'] for r in joined}==set(originals)
+    for r in joined:
+        assert r['sha256']==originals[r['name']]
+        expected=sorted(n for n in coverage if re.fullmatch(re.escape(r['name'])+r'\.part[0-9]{3}',n))
+        assert expected and r['parts']==expected
+        assert expected==[r['name']+f'.part{i:03}' for i in range(1,len(expected)+1)]
+        assert all(assets[n]['covered_by_signed_checksums'] for n in expected)
+
 def validate_download(project, release):
     assert re.fullmatch(r'(?:cli-)?v[0-9]+\.[0-9]+\.[0-9]+-preview\.[0-9]+',release['tag'])
     assert re.fullmatch(r'[0-9a-f]{40}',release['commit'])
@@ -21,6 +53,7 @@ def validate_download(project, release):
         assert type(x['covered_by_signed_checksums']) is bool
     covered={x['name'] for x in a if x['covered_by_signed_checksums']}
     assert covered and covered==set(sig['scope']) and len(covered)==len(sig['scope'])
+    validate_transport(d)
     assert release['verification_scope'] and release['publisher_validation']['release_url']==project['repository']+'/releases/tag/'+release['tag']
 
 def download_release(project):
@@ -61,7 +94,7 @@ def load(path=MANIFEST):
         assert set(edition['release_tags']) <= set(data['projects'])
         for key, tag in edition['release_tags'].items():
             project = data['projects'][key]
-            assert tag in [project['recommended_verified_release']['tag'], *project['historical_evidence_tags']]
+            assert tag in [project['recommended_verified_release']['tag'], download_release(project)['tag'], *project['historical_evidence_tags']]
         for row in edition['public_pdfs'].values():
             assert re.fullmatch(r'[0-9a-f]{64}', row['sha256'])
             assert row['language'] in ('en', 'nl', 'es')

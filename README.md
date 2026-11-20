@@ -8,7 +8,13 @@ I build futures execution and order-risk systems, and modernise payment backends
 
 [Portfolio](https://pouriajamali.site/) · [Resumes & Contact](https://pouriajamali.site/resumes/) · [LinkedIn](https://www.linkedin.com/in/pouria-jamali-a6a04138/)
 
-## Four starting points
+## Choose a review path
+
+**Trading / execution:** [Execution](https://github.com/pouriajamali/trading-execution-lab) → [FIX recovery](https://github.com/pouriajamali/fix-session-recovery-harness). Inspect retry-safe state first, then the session boundary.
+
+**Financial backend:** [Reconciliation ledger](https://github.com/pouriajamali/financial-reconciliation-ledger) → [Contract evolution](https://github.com/pouriajamali/contract-evolution-lab). Inspect durable posting and receipts, then version compatibility.
+
+## Four illustrated examples
 
 Open a repository to inspect the implementation. Each short illustration follows a documented synthetic scenario.
 
@@ -65,7 +71,7 @@ The project catalogue below can be reviewed directly on GitHub. Each repository 
 | FIX Session Recovery | QuickFIX/n sequence gaps, duplicates, stored resends and controlled restart. | [Code](https://github.com/pouriajamali/fix-session-recovery-harness) · [Preview][fix-release] |
 | Price-Time Matching | Two C# implementations checked against an independent Python model. | [Code](https://github.com/pouriajamali/price-time-matching-core) · [Preview][matching-release] |
 | C++20 / Python Book Replay | Gap/snapshot recovery and fixed-capacity depth checked against a reference. | [Code](https://github.com/pouriajamali/book-replay-lab) · [Preview][replay-release] |
-| Tail-Latency Evidence | Open-loop overload accounting: keep rejected and unfinished work beside percentiles. | [Code](https://github.com/pouriajamali/tail-latency-evidence-bench) · [Preview][latency-release] |
+| Tail-Latency Evidence | Open-loop accounting; inspect the M1 witness boundary and documented standalone-oracle limits. | [Code](https://github.com/pouriajamali/tail-latency-evidence-bench) · [Preview][latency-release] |
 
 ## Financial backend & distributed systems
 
@@ -102,9 +108,9 @@ The public labs are independent synthetic/offline samples. Runtime requirements,
 [execution-release]: https://github.com/pouriajamali/trading-execution-lab/releases/tag/v0.6.0-preview.1
 [execution-case]: https://github.com/pouriajamali/trading-execution-lab/blob/v0.6.0-preview.1/docs/CASE-STUDY.md
 [execution-design]: https://github.com/pouriajamali/trading-execution-lab/blob/v0.6.0-preview.1/docs/decisions/0002-transactional-control-plane.md
-[reliability-release]: https://github.com/pouriajamali/service-reliability-lab/releases/tag/v0.1.3-preview.1
-[reliability-case]: https://github.com/pouriajamali/service-reliability-lab/blob/v0.1.3-preview.1/README.md
-[reliability-design]: https://github.com/pouriajamali/service-reliability-lab/blob/v0.1.3-preview.1/docs/DESIGN.md
+[reliability-release]: https://github.com/pouriajamali/service-reliability-lab/releases/tag/v0.1.4-preview.1
+[reliability-case]: https://github.com/pouriajamali/service-reliability-lab/blob/v0.1.4-preview.1/README.md
+[reliability-design]: https://github.com/pouriajamali/service-reliability-lab/blob/v0.1.4-preview.1/docs/DESIGN.md
 [integrity-release]: https://github.com/pouriajamali/market-data-integrity-lab/releases/tag/v0.6.0-preview.1
 [integrity-case]: https://github.com/pouriajamali/market-data-integrity-lab/blob/v0.6.0-preview.1/docs/CASE-STUDY.md
 [integrity-design]: https://github.com/pouriajamali/market-data-integrity-lab/blob/v0.6.0-preview.1/README.md
@@ -123,21 +129,21 @@ The public labs are independent synthetic/offline samples. Runtime requirements,
 [reference-release]: https://github.com/pouriajamali/point-in-time-reference-lab/releases/tag/v0.1.0-preview.4
 [reference-case]: https://github.com/pouriajamali/point-in-time-reference-lab/blob/v0.1.0-preview.4/README.md
 [reference-design]: https://github.com/pouriajamali/point-in-time-reference-lab/blob/v0.1.0-preview.4/docs/ADR.md
-[fix-release]: https://github.com/pouriajamali/fix-session-recovery-harness/releases/tag/v0.1.0-preview.5
-[fix-case]: https://github.com/pouriajamali/fix-session-recovery-harness/blob/v0.1.0-preview.5/README.md
-[fix-design]: https://github.com/pouriajamali/fix-session-recovery-harness/blob/v0.1.0-preview.5/docs/CASE-STUDY.md
+[fix-release]: https://github.com/pouriajamali/fix-session-recovery-harness/releases/tag/v0.1.0-preview.6
+[fix-case]: https://github.com/pouriajamali/fix-session-recovery-harness/blob/v0.1.0-preview.6/README.md
+[fix-design]: https://github.com/pouriajamali/fix-session-recovery-harness/blob/v0.1.0-preview.6/docs/CASE-STUDY.md
 [ledger-release]: https://github.com/pouriajamali/financial-reconciliation-ledger/releases/tag/v0.1.0-preview.3
 [ledger-case]: https://github.com/pouriajamali/financial-reconciliation-ledger/blob/v0.1.0-preview.3/README.md
 [ledger-design]: https://github.com/pouriajamali/financial-reconciliation-ledger/blob/v0.1.0-preview.3/docs/CASE-STUDY.md
-[latency-release]: https://github.com/pouriajamali/tail-latency-evidence-bench/releases/tag/v0.1.0-preview.1
-[latency-case]: https://github.com/pouriajamali/tail-latency-evidence-bench/blob/v0.1.0-preview.1/README.md
-[latency-design]: https://github.com/pouriajamali/tail-latency-evidence-bench/blob/v0.1.0-preview.1/docs/ADR.md
-[recovery-release]: https://github.com/pouriajamali/sqlite-recovery-drill/releases/tag/v0.1.0-preview.1
-[recovery-case]: https://github.com/pouriajamali/sqlite-recovery-drill/blob/v0.1.0-preview.1/README.md
-[recovery-design]: https://github.com/pouriajamali/sqlite-recovery-drill/blob/v0.1.0-preview.1/docs/CASE-STUDY.md
-[doctor-release]: https://github.com/pouriajamali/dotnet-release-doctor/releases/tag/v0.1.0-preview.1
-[doctor-case]: https://github.com/pouriajamali/dotnet-release-doctor/blob/v0.1.0-preview.1/README.md
-[doctor-design]: https://github.com/pouriajamali/dotnet-release-doctor/blob/v0.1.0-preview.1/docs/CASE-STUDY.md
+[latency-release]: https://github.com/pouriajamali/tail-latency-evidence-bench/releases/tag/v0.1.0-preview.2
+[latency-case]: https://github.com/pouriajamali/tail-latency-evidence-bench/blob/v0.1.0-preview.2/README.md
+[latency-design]: https://github.com/pouriajamali/tail-latency-evidence-bench/blob/v0.1.0-preview.2/docs/ADR.md
+[recovery-release]: https://github.com/pouriajamali/sqlite-recovery-drill/releases/tag/v0.1.0-preview.2
+[recovery-case]: https://github.com/pouriajamali/sqlite-recovery-drill/blob/v0.1.0-preview.2/README.md
+[recovery-design]: https://github.com/pouriajamali/sqlite-recovery-drill/blob/v0.1.0-preview.2/docs/CASE-STUDY.md
+[doctor-release]: https://github.com/pouriajamali/dotnet-release-doctor/releases/tag/v0.1.0-preview.2
+[doctor-case]: https://github.com/pouriajamali/dotnet-release-doctor/blob/v0.1.0-preview.2/README.md
+[doctor-design]: https://github.com/pouriajamali/dotnet-release-doctor/blob/v0.1.0-preview.2/docs/CASE-STUDY.md
 [admission-release]: https://github.com/pouriajamali/data-admission-gate/releases/tag/v0.1.0-preview.3
 [admission-case]: https://github.com/pouriajamali/data-admission-gate/blob/v0.1.0-preview.3/README.md
 [admission-design]: https://github.com/pouriajamali/data-admission-gate/blob/v0.1.0-preview.3/docs/COMPARISON.md
